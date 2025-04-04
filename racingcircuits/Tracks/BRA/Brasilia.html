@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/BRA/Brasilia.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:55:36 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		
+		<script async src="../../../..//imageMapResizer.min.js"></script>
+		
+		<title>Brasilia</title>
+		<meta property="og:title" content="Brasilia"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/BRA/Brasilia.html"/>
+		<meta property="og:description" content="Brasilia Street Races"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/BRA/Brasilia/C66.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Brasilia</h1>
+		<h3 class="mutable" id="head">1966-1970</h3>
+		<div id="visible">
+		
+			<div class="flex">
+				<a href="javascript:ButtonPress(&#34;zoom&#34;)" id="img_lnk">
+					<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/BRA/Brasilia/C66.gif' useMap="#">
+				</a>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="years"> <!-- Switch between changed layouts over time. See script.js for onclick functions. Each Year needs a layouts div with the year as id-->
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('C66')">Street</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('MX24')">Motocross</button>
+				</div>
+				<div class="layouts" id="Street" style="display:inherit">
+					<button type='button' id='B_C66' onclick="enableHref('javascript:ButtonPress(&#34;zoom&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/C66.gif','name':'Brasilia','head':'1966-1970','length':'4.47 km // 2.779 miles13771.95','type':'Temporary','elev':'1103 m', 'direction':'Counter Clockwise (66-67) / Clockwise (68-70)', 'urlmap':'#'})">1966</button>
+					<button type='button' id='B_C62' onclick="enableHref('javascript:ButtonPress(&#34;zoom&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/C62.gif','name':'Brasilia','head':'1962.000','length':'7.65 km // 4.752 miles23545.61','type':'Temporary','elev':'1090 m', 'direction':'Counter Clockwise', 'urlmap':'#'})">1962</button>
+					<!--<button type='button' id='B_C60' onclick="enableHref('javascript:ButtonPress(&#34;zoom&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/C60.gif','name':'Brasilia','head':'Grande Prêmio Juscelino Kubitschek (1960)','length':' km // 0.000 milesunkn','type':'Temporary','elev':'1090 m', 'direction':'Counter Clockwise', 'urlmap':'#'})">1960</button>-->
+				</div>
+				<div class="layouts" id="Motocross" style="display:none">
+					<button type='button' id='B_MX24' onclick="enableHref('javascript:ButtonPress(&#34;zoom&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/MX24.gif','name':'Brasilia','head':'Motocross track (2024-present)','length':'0.617 km // 0.384 miles1901.01','type':'Motocross','elev':'1124 m', 'direction':'unknown', 'urlmap':'#'})">2024</button>
+					<button type='button' id='B_MX10' onclick="enableHref('javascript:ButtonPress(&#34;zoom&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/MX10.gif','name':'Brasilia','head':'Motocross track (2010)','length':'1.054 km // 0.655 miles3245.43','type':'Motocross','elev':'1124 m', 'direction':'unknown', 'urlmap':'#'})">2010</button>
+					<button type='button' id='B_MX02' onclick="enableHref('javascript:ButtonPress(&#34;zoom&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/MX02.gif','name':'Brasilia','head':'Motocross track (2002-2009)','length':'1.004 km // 0.624 miles3090.73','type':'Motocross','elev':'1124 m', 'direction':'unknown', 'urlmap':'#'})">2002</button>
+				</div>
+				<div class="layouts" id="zoom" style="display:none"> 
+					<button type='button' id='B_zoom' onclick=" enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/BRA/Brasilia/zoom.gif','name':'Brasilia','head':'Overview (1960-present)','length':' ','type':' ','elev':'1100 m', 'direction':' ', 'urlmap':'#zoom_map'})">zoom</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id= "table">	
+			<table>			
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Temporary</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Counter Clockwise (66-67) / Clockwise (68-70)</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">4.472 km // 2.779 miles</td>
+				</tr>
+				<tr>		 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright mutable" id='elev'>1103 m</td>
+				</tr>
+
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/-15.7938532,-47.8830152" target="_blank">
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						Brasília<br>
+						Distrito Federal<br>
+						Brazil
+					</td>
+				</tr>
+			</table>
+			
+			<table id="extra"> 
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src='../../../..//icons/ico_qmark.png'>There where races held in Brasilia already in 1960. The route was different from the 1962 & 66-70 courses, but I couldn't find much more detail apart from it being mainly held on roads at the southern side of the central bus terminal.</td></tr>
+				<tr><td><img src='../../../..//icons/ico_qmark.png'>The 1962 layout contains some nonsensical corners coming of the main N/S highway at the north end of the loop. At least in current day Brasilia it is impossible to just turn left there. I couldn't find any period photos that showed that area of the town, so I went with what every other map of the layout shows.</td></tr>
+				<tr><td><img src='../../../..//icons/ico_star.png'>Lap distances were derived from the drawing.</td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Update: 2411030845 UTC</div>	
+		<div id="sources">
+			<p id="source_head">Sources</p>	
+			<ul>
+				<li><a href='https://www.conexaosaloma.com.br/1o-gp-1000-km-brasilia-1962/'>HISTÓRICO – 1º GP 1000 KM BRASÍLIA #1962</a></li>
+				<li><a href='https://www.gdecarli.it/php2/circuit.php?var1=3310&amp;var2=2'>G. de Carli</a></li>
+				<li><a href='https://www.gdecarli.it/php2/circuit.php?var1=3311&amp;var2=2'>G. de Carli</a></li>
+				<li><a href='https://brasiliaminha.com.br/dw/doku.php?id=mil_quilometros_de_brasilia'>Mil Quilômetros de Brasília</a></li>
+				<li><a href='https://www.facebook.com/photo/?fbid=937234876458623&amp;set=pb.100064480102971.-2207520000'>Facebook - Histórias de Brasília</a></li>
+				<li><a href='https://www.racingsportscars.com/results/Brasilia-1962-xx-xx-11317.html'>Racing Sports Cars</a></li>
+				<li><a href='https://www.racingsportscars.com/results/Brasilia-1964-xx-xx-11337.html'>Racing Sports Cars</a></li>
+				<li><a href='https://www.racingsportscars.com/results/Brasilia-1965-xx-xx-11352.html'>Racing Sports Cars</a></li>
+				<li><a href='https://www.racingsportscars.com/results/Brasilia-1967-04-23-11378.html'>Racing Sports Cars</a></li>
+				<li><a href='https://www.racingsportscars.com/results/Brasilia-1967-xx-xx-11382.html'>Racing Sports Cars</a></li>
+				<li><a href='http://www.wsrp.cz/laraces1967.html'>World Sports Racing Prototypes</a></li>
+				<li><a href='https://www.racingsportscars.com/results/Brasilia-1969-04-24-11396.html'>Racing Sports Cars</a></li>
+				<li><a href='http://www.wsrp.cz/laraces1970.html'>World Sports Racing Prototypes</a></li>
+				<li><a href='https://www.youtube.com/watch?v=mkNi5_UNtWU'>CORRIDA DE MOTOCROSS NA ARENA BRB SERÁ DOMINGO 10-3-24 A TARDE </a></li>
+			</ul>
+		</div>
+		
+		<map name="zoom_map">
+			<area shape="rect" coords="0,0,290,220" href="http://../Tracks/BRA/BrasiliaAutodromo.html">
+			<area shape="rect" coords="0,220,290,380" href="javascript:ButtonPress(&#34;MX24&#34;)">
+			<area shape="rect" coords="290,0,625,383" href="javascript:ButtonPress(&#34;C62&#34;)">
+			<area shape="rect" coords="290,383,625,810" href="javascript:ButtonPress(&#34;C66&#34;)">
+		</map>
+		<script type="text/javascript">
+			imageMapResize();
+		</script>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/BRA/Brasilia.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:55:36 GMT -->
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/IND/Irungattukottai.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:19:57 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Madras Motor Race Track</title>
+		<meta property="og:title" content="Madras Motor Race Track"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/IND/Irungattukottai.html"/>
+		<meta property="og:description" content="Madras (Irungattukottai) Motor Race Track track layouts 1990 to present"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/IND/Irungattukottai/F11.gif"/>
+	</head>
+	
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Madras Motor Race Track</h1>
+		<h3 class="mutable" id="head">Full track (1990-present)</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<a href="javascript: " id="img_lnk">
+					<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/IND/Irungattukottai/F11.gif'>
+				</a>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="years">
+					<button type="button" onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('F11')">2011</button>
+					<button type="button" onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('F90')">1990</button>
+					<button type="button" id="B_Proposals" onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/P88.gif','name':'Irungattukottai Race Track','head':'1988 proposal','length':'3.438 km // 2.136 miles','type':'Permanent', 'direction':'Clockwise'})">Proposal</button>
+				</div>
+				<div class="layouts" id="2011" style="display:inherit">
+					<button type='button' id='B_F11' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/F11.gif','name':'Madras Motor Race Track','head':'Full track (1990-present)','length':'3.717 km // 1.500 miles','type':'Permanent', 'direction':'Clockwise'})">Full</button>
+					<button type='button' id='B_C11' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/C11.gif','name':'Madras Motor Race Track','head':'Club track (1990-present)','length':'2.100 km // 1.305 miles','type':'Permanent', 'direction':'Clockwise'})">Club</button>
+					<button type='button' id='B_D11' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/D11.gif','name':'Madras Motor Race Track','head':'Dragstrip (2011(?)-present)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Drag</button>
+					<button type='button' id='B_MX11' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX11b&#34;)') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/MX11.gif','name':'Madras Motor Race Track','head':'Motocross track (2011(?)-present(?))','length':'0.551 km // 0.343 miles','type':'Motocross', 'direction':'Counter Clockwise'})">Motocross</button>
+				</div>
+				<div class="layouts" id="1990" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					<button type='button' id='B_F90' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/F90.gif','name':'Irungattukottai Race Track','head':'Full track (1990-present)','length':'3.717 km // 2.310 miles','type':'Permanent', 'direction':'Clockwise'})">Full</button>
+					<button type='button' id='B_C90' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/C90.gif','name':'Irungattukottai Race Track','head':'Club track (1990-present)','length':'2.100 km // 1.305 miles','type':'Permanent', 'direction':'Clockwise'})">Club</button>
+				</div>
+				<div class="layouts" id="Proposal" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+				<div class="layouts" id="hidden" style="display:none"> <!-- hidden buttons for zoomed views-->
+					<button type='button' id='B_MX11b' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX11&#34;)') ; changeImage({'layout_img':'./Tracks/IND/Irungattukottai/MX11b.gif','name':'Madras Motor Race Track','head':'Motocross track (2011(?)-present(?))','length':'0.551 km // 0.342 miles','type':'Motocross', 'direction':'Counter Clockwise'})"></button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">	<!--Tabulated data. Can be changed with key:value pair entered in object passed to changeImage(). takes the form of id:string. See script.js for details-->
+			<table>			<!--More rows can be add and changed on button click,as long as id:string convention described in changeImage() documentation is followed.-->
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Permanent</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">3.717 km // 1.500 miles</td>
+				</tr>
+				<tr>		<!-- elevation above sealevel found via google maps--> 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright">41 m</td>
+				</tr>
+				
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/13.0025,79.985833" target="_blank"><!-- change coordinates in url to tracks coords-->
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						NH4, Opposite of Hyundai Motor India Ltd Factory<br>
+						Irungattukottai<br>
+						Kanchipuram District<br>
+						Tamil Nadu 602117<br>
+						India
+					</td>
+				</tr>
+				<tr>
+					<td class="tleft">Telephone</td>
+					<td class="tright">+91 984 106 5135</td>
+				</tr>
+				<tr>
+					<td class="tleft">Website</td>
+					<td class="tright"><a href="https://en.madrasmotorsports.com/club/our-circuit/">www.madrasmotorsports.com</a></td>
+				</tr>
+				<tr>
+					<td class="tleft">Email</td>
+					<td class="tright"><a href="mailto:circuit@madrasmotorsports.com">circuit@madrasmotorsports.com</a></td>
+				</tr>
+			</table>
+			
+			<table id="extra"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src='../../../..//icons/ico_link.png'><a href='https://www.rally-maps.com/South-India-Rally-2021/MMRT#Related%20Stages'>Madras MRT</a> at Rally Maps</td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1904130204 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li><a href='https://en.madrasmotorsports.com/club/our-circuit/'>Layout - Track Website</a></li>
+				<li><a href='http://www.gdecarli.it/php/circuit.php?var1=426&amp;var2=2'>Proposal - GdCarli & RCDB</a></li>
+				<li><a href='https://www.freemaptools.com/'>Altitude - Elevation Finder</a></li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/IND/Irungattukottai.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:19:57 GMT -->
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/KOR/Inje.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:55:02 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Inje Speedium</title>
+		<meta property="og:title" content="Inje Speedium"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/KOR/Inje.html"/>
+		<meta property="og:description" content="Inje Speedium (2013-present)"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/KOR/Inje/GP13.gif"/>
+	</head>
+	
+	
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 id="name">Inje Speedium</h1>
+		<h3 class="mutable" id="head">Full Course (2013-present)</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<a href="javascript:" id="img_lnk">
+					<img class="mutable" id="layout_img"  alt="layout" src='../../../..//Tracks/KOR/Inje/GP13.gif'>
+				</a>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="layouts" id="B_2013" style="display:inherit">
+					<button type='button' id='B_GP13' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/KOR/Inje/GP13.gif','head':'Full Course (2013-present)','length':'3.908 km // 2.428 miles','type':'Permanent', 'direction':'Clockwise'})">Full</button>
+					<button type='button' id='B_E13' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/KOR/Inje/E13.gif','head':'North Course (2013-present)','length':'2.577 km // 1.601 miles','type':'Permanent', 'direction':'Clockwise'})">North</button>
+					<button type='button' id='B_W13' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/KOR/Inje/W13.gif','head':'South Course (2013-present)','length':'1.375 km // 0.854 miles','type':'Permanent', 'direction':'Clockwise'})">South</button>
+					<button type='button' id='B_K13' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;K13b&#34;)') ; changeImage({'layout_img':'./Tracks/KOR/Inje/K13.gif','head':'Kart Track (2013(?)-present)','length':'0.386 km // 0.240 miles','type':'Temporary', 'direction':'Clockwise'})">Kart</button>
+				</div>
+				<div class="layouts" id="hidden" style="display:none"> <!-- hidden buttons for zoomed views-->
+					<button type='button' id='B_K13b' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;K13&#34;)') ; changeImage({'layout_img':'./Tracks/KOR/Inje/K13b.gif','head':'Kart Track (2013(?)-present)','length':'0.386 km // 0.240 miles','type':'Temporary', 'direction':'Clockwise'})">Kart_big</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">	<!--Tabulated data. Can be changed with key:value pair entered in object passed to changeImage(). takes the form of id:string. See script.js for details-->
+			<table>			<!--More rows can be add and changed on button click,as long as id:string convention described in changeImage() documentation is followed.-->
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Permanent</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">3.908 km // 2.428 miles</td>
+				</tr>
+				<tr>		<!-- elevation above sealevel found via google maps--> 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright">325 m</td>
+				</tr>
+				
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/38.004003,128.2902173" target="_blank"><!-- change coordinates in url to tracks coords-->
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						130 Sanghadap-ro<br>
+						Girin-myeon<br>
+						Inje<br>
+						Gangwon-do<br>
+						South Korea
+					</td>
+				</tr>
+				<tr>
+					<td class="tleft">Telephone</td>
+					<td class="tright">+82 164 433 66</td>
+				</tr>
+				<tr>
+					<td class="tleft">Website</td>
+					<td class="tright"><a href="https://www.speedium.co.kr/company_eng/content/01_01.jsp#none">www.speedium.co.kr</a></td>
+				</tr>
+			</table>
+			
+			<table id="extra" style="display:none"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr>
+					<td>blablabla</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1812151130 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li>Layout - GoogleMaps Dec18</li>
+				<li><a href="http://www.racingcircuits.info/asia/south-korea/inje-speedium.html">Length - Racingcircuits.info</a></li>
+				<li><a href="https://www.freemaptools.com/elevation-finder.htm">Altitude - FreeMapTools</a></li>
+				<li><a href="http://speedium.co.kr/">Circuit Website</a></li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/KOR/Inje.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:55:02 GMT -->
+</html>

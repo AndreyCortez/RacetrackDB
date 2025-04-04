@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/FtWayneSpdw.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:10 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		
+		<title>Fort Wayne Speedway</title>
+		<meta property="og:title" content="Fort Wayne Speedway"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/FtWayneSpdw.html"/>
+		<meta property="og:description" content="Fort Wayne Speedway"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/FtWayneSpdw/O495.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 id="name">Fort Wayne Speedway</h1>
+		<h3 class="mutable" id="head">1949-1964</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/USA/FtWayneSpdw/O495.gif'>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="years"> <!-- Switch between changed layouts over time. See script.js for onclick functions. Each Year needs a layouts div with the year as id-->
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('495')">1949</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('475')">1947</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('465')">1946</button>
+					<button type='button' id='B_285' onclick="changeYear(this.innerHTML) ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O285.gif','head':'1928-1936, 1946-1948','length':'1.006 km // 0.625 miles','type':'Dirt Oval'})">1928</button>
+				</div>
+				
+				<div class="layouts" id="1949" style="display:inherit"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button'id='B_495' onclick="lnk2html(this.id) ;changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O495.gif','head':'1949-1964','length':'1.006 km //0.625 miles','type':'Paved Oval'})">5/8 mile</button>
+					<button type='button'id='B_494' onclick="lnk2html(this.id) ;changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O474.gif','head':'1947-1964','length':'0.402 km //0.250 miles','type':'Paved Oval'})">1/4 mile</button>
+				</div>
+				<div class="layouts" id="1947" style="display:none"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button'id='B_475' onclick="lnk2html(this.id) ;changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O475.gif','head':'1928-1936, 1946-1948','length':'1.006 km //0.625 miles','type':'Dirt Oval'})">5/8 mile</button>
+					<button type='button'id='B_474' onclick="lnk2html(this.id) ;changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O474.gif','head':'1947-1964','length':'0.402 km //0.250 miles','type':'Paved Oval'})">1/4 mile</button>
+				</div>
+				<div class="layouts" id="1946" style="display:none"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button' id='B_465' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O465.gif','head':'1928-1936, 1946-1948','length':'1.006 km // 0.625 miles','type':'Dirt Oval'})">5/8 mile</button>
+					<button type='button' id='B_462' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O462.gif','head':'1946','length':'0.8045 km // 0.500 miles','type':'Dirt Oval'})">1/2 mile</button>
+					<button type='button' id='B_464' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/FtWayneSpdw/O464.gif','head':'1946','length':'0.40225 km // 0.250 miles','type':'Dirt Oval'})">1/4 mile</button>
+				</div>
+				<div class="layouts" id="1928" style="display:none"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					&nbsp;
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">
+			<table>
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Paved Oval</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright" id="direction">Counter Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">1.006km //0.625miles</td>
+				</tr>
+				<tr>
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright" id='elev'>246 m</td>
+				</tr>
+
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/41.1184779,-85.1422939" target="_blank">
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						100 West Coliseum Boulevard<br>
+						Fort Wayne 46805<br>
+						Indiana<br>
+						United States America
+					</td>
+				</tr>
+			</table>
+						
+			<table id="extra">
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr>
+					<td><img src="../../../..//icons/ico_link.png">Ft. Wayne Speedway at <a href='http://www.motorsportmemorial.org/query.php?db=ct&amp;q=circuit_a&amp;n=422,423,424,425'>Motorsport Memorial</a></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		
+		<div id="footer">Last Updated: 2207140616 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li><a href='https://www.facebook.com/permalink.php?story_fbid=2285466668436257&amp;id=1798898647093064&amp;__tn__=-R'>Lost Dirt Tracks Facebook Group</a></li>
+				<li><a href='http://www.speedwayandroadracehistory.com/fort-wayne-speedway.html'>Speedway & Roadrace History</a></li>
+				<li><a href='http://www.indianaopenwheel.com/showpost.php?p=131818&amp;postcount=3'>Indianaopenwheel.com</a></li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/FtWayneSpdw.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:10 GMT -->
+</html>

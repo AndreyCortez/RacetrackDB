@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/CHN/Comp-Speed.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:18:43 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		
+		<title>Comp-Speed Bejing</title>
+		<meta property="og:title" content="Comp-Speed Bejing"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/CHN/Comp-Speed.html"/>
+		<meta property="og:description" content="Comp-Speed Bejing"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/CHN/Comp-Speed/Comp-Speed.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 id="name">Comp-Speed International</h1>
+		<h3 class="mutable" id="head">Full Circuit (2003 proposal)</h3>
+		<div id="visible">
+			<div class="flex">
+				<a href="javascript:" id="img_lnk">
+					<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/CHN/Comp-Speed/C03.gif'>
+				</a>
+			</div>
+
+			<div id= "buttonbox">	
+									
+				<div class="years"> 
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('C03')">2003</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('C02')">2002</button>
+				</div>
+				<div class="layouts" id="2003" style="display:inherit"> 
+					<button type='button' id='B_C03' onclick="enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/C03.gif','head':'Full Circuit (2003 proposal)','length':'5.305km //3.297 miles', 'direction':'Clockwise'})">Full</button>
+					<button type='button' id='B_N03' onclick="enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/N03.gif','head':'North Circuit (2003 proposal)','length':'2.898km //1.801 miles', 'direction':'Clockwise'})">North</button>
+					<button type='button' id='B_S03' onclick="enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/S03.gif','head':'South Circuit (2003 proposal)','length':'2.470km //1.535 miles', 'direction':'Clockwise'})">South</button>
+					<button type='button' id='B_K03' onclick="enableHref('javascript:ButtonPress(&#34;Kb3&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/K03.gif','head':'Kart Circuit (2002 proposal)','length':'1.265km //0.786 miles', 'direction':'unkown'})">Kart</button>
+													
+				</div>
+				<div class="layouts" id="2002" style="display:none"> 
+					<button type='button' id='B_C02' onclick="enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/C02.gif','head':'Full Circuit (2002 proposal)','length':'5.223km //3.246 miles', 'direction':'Clockwise'})">Full</button>
+					<button type='button' id='B_N02' onclick="enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/N02.gif','head':'North Circuit (2002 proposal)','length':'2.828km //1.758 miles', 'direction':'Clockwise'})">North</button>
+					<button type='button' id='B_S02' onclick="enableHref('') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/S02.gif','head':'South Circuit (2002 proposal)','length':'2.430km //1.510 miles', 'direction':'Clockwise'})">South</button>
+					<button type='button' id='B_K02' onclick="enableHref('javascript:ButtonPress(&#34;Kb2&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/K02.gif','head':'Kart Circuit (2002 proposal)','length':'1.265km //0.786 miles', 'direction':'unkown'})">Kart</button>
+				</div>
+				
+				<div class="layouts" id="hidden" style="display:none"> 
+					<button type='button' id='B_Kb2' onclick=" enableHref('javascript:ButtonPress(&#34;K02&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/Kb2.gif','head':'Kart Circuit (2002 proposal)','length':'1.265km //0.786 miles', 'direction':'unkown'})">KB</button>
+					<button type='button' id='B_Kb3' onclick=" enableHref('javascript:ButtonPress(&#34;K03&#34;)') ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/CHN/Comp-Speed/Kb3.gif','head':'Kart Circuit (2002 proposal)','length':'1.265km //0.786 miles', 'direction':'unkown'})">KB</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id= "table">	
+			<table>			
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright" id="type">Permanent</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">5.305km //3.297 miles</td>
+				</tr>
+			</table>
+			
+			<table id="extra"> 
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr>
+					<td><img src='../../../..//icons/ico_star.png'>Lap length calculated from 5.223km lap length given in GPPits.net article. Presumably for the 2002 proposal.</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 2109250412 UTC</div>	
+		<div id="sources">
+			<p id="source_head">Sources</p>	
+			<ul>
+				<li><a href='https://www.grandprix.com/news/another-race-track-for-china.html'>Grand Prix.com</a></li>
+				<li><a href='https://gppits.net/nieuws/vooruitblik_op_china/'>GPPits.net</a></li>
+				<li><a href='http://www.silhouet.com/motorsport/tracks/beijing.html'>GEL Motorsport Information Page</a></li>
+				<li><a href='http://www.wilsonmotorsport.com/designs-and-concepts-not-built/'>Wilson Motorsport Inc.</a></li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/CHN/Comp-Speed.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:18:43 GMT -->
+</html>

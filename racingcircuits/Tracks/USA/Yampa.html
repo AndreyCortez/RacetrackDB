@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Yampa.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:11 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		
+		<title>Hayden Speedway</title>
+		<meta property="og:title" content="Hayden Speedway"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Yampa.html"/>
+		<meta property="og:description" content="Yampa Valley Speedway, Hayden Speedway, Motocross"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Yampa/O14.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Hayden Speedway</h1>
+		<h3 class="mutable" id="head">Oval (2005(?)-2010 & 2014-2015)</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/USA/Yampa/O14.gif'>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="years"> 
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('O14')">2014</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('O11')">2011</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('O05')">2005</button>
+					<button type="button" id='B_O99' onclick="changeYear(this.innerHTML) ; lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/O99.gif','name':'Yampa Valley Speedway','head':'Oval (1978-2004(?))','length':'1.340 km // 0.833 miles','type':'Dirt Oval', 'direction':'Counter Clockwise'})">1999</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('O78')">1978</button>
+				</div>
+				<div class="layouts" id="2014" style="display:inherit"> 
+					<button type='button' id='B_O14' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/O14.gif','name':'Hayden Speedway','head':'Oval (2005(?)-2010 & 2014-2015)','length':'3.319 km // 2.063 miles','type':'Dirt Oval', 'direction':'Counter Clockwise'})">Oval</button>
+					<button type='button' id='B_MX14' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/MX14.gif','name':'Hayden Speedway','head':'motocross track (2014(?)-present)','length':'6.571 km // 4.084 miles','type':'Motocross track', 'direction':'Clockwise(?)'})">MX</button>
+				</div>
+				<div class="layouts" id="2011" style="display:none"> 
+					<button type='button' id='B_O11' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/O11.gif','name':'Hayden Speedway','head':'Oval (2005(?)-2010 & 2014-2015)','length':'2.105 km // 1.308 miles','type':'Dirt Oval', 'direction':'Counter Clockwise'})">Oval</button>
+					<button type='button' id='B_MX11' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/MX11.gif','name':'Hayden Speedway','head':'Motocross track (2011(?)-2013(?))','length':'3.319 km // 2.063 miles','type':'Motocross track', 'direction':'Clockwise(?)'})">MX</button>
+				</div>
+				<div class="layouts" id="2005" style="display:none"> 
+					<button type='button' id='B_O05' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/O05.gif','name':'Yampa Valley Speedway','head':'Oval (2005(?)-2010 & 2014-2015)','length':'1.340 km // 0.833 miles','type':'Dirt Oval', 'direction':'Counter Clockwise'})">2005</button>
+					<button type='button' id='B_MX05' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/MX05.gif','name':'Yampa Valley Speedway','head':'Motocross track (2005(?)-2010(?))','length':'2.105 km // 1.308 miles','type':'Motocross track', 'direction':'unknown'})">MX</button>
+				</div>
+					<div class="layouts" id="1999" style="display:none"> 
+					&nbsp;
+				</div>
+				<div class="layouts" id="1978" style="display:none"> 
+					<button type='button' id='B_O78' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/O78.gif','name':'Yampa Valley Speedway','head':'Oval (1978-2004(?))','length':'0.402 km // 0.250 miles','type':'Dirt Oval', 'direction':'Counter Clockwise'})">Oval</button>
+					<button type='button' id='B_MX78' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Yampa/MX78.gif','name':'Yampa Valley Speedway','head':'Motocross track (1978(?)-1998(?))','length':'1.340 km // 0.833 miles','type':'Motocross track', 'direction':'unknown'})">MX</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id= "table">	
+			<table>			
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Dirt Oval</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Counter Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">3.319 km // 2.063 miles</td>
+				</tr>
+				<tr>		 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright" id='elev'>1950 m</td>
+				</tr>
+
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/40.4694201,-107.2487698" target="_blank">
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						37900 County Roadd 53<br>
+						Hayden 81639<br>
+						Colorado<br>
+						United States of America
+					</td>
+				</tr>
+			</table>
+			
+			<table id="extra"> 
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src='../../../..//icons/ico_qmark.png'>Years of operation on MX layouts is highly uncertain, as is the MX tracks relation to the Speedway.</td></tr>
+				<tr><td><img src='../../../..//icons/ico_link.png'>Hayden Valley Speedway at <a href='https://www.rally-maps.com/Rally-Colorado-2009/Super-Special'> Rally-Maps.com</a></td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1909060423 UTC</div>	
+		<div id="sources">
+			<p id="source_head">Sources</p>	
+			<ul>
+				<li><a href='https://www.facebook.com/permalink.php?story_fbid=2167549660227959&amp;id=1798898647093064&amp;__tn__=-R'>Facebook - Lost Dirt Tracks Group</a></li>
+				<li><a href='http://www.racingin.com/track/details.aspx?s=CO&amp;Address_ID=0248'>RacingIn - Hayden Speedway</a></li>
+				<li><a href='https://steamboatlibrary.marmot.org/Archive/place:2549/Place'>Bud Werner Memorial Library - Hayden Speedway</a></li>
+				<li><a href='https://adams.marmot.org/Archive/organization%3A1814/Organization'>Nielsen Library - Yampa Valley Racing Association</a></li>
+				<li>1978 Layout - USGS aerial survey - Image ID: NC1NHAP820129061</li>
+				<li>2000s Layout - Google Earth historical imagesets</li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Yampa.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:11 GMT -->
+</html>

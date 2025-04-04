@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/GBR/Goodwood.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:58:12 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<script async src="../../../..//imageMapResizer.min.js"></script>
+		<title>Goodwood</title>
+		<meta property="og:title" content="Goodwood Circuit and Hillclimb"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/GBR/Goodwood.html"/>
+		<meta property="og:description" content="Goodwood Circuit and Festival of Speed Hillclimb"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/GBR/Goodwood/Czoom.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Goodwood</h1>
+		<h3 class="mutable" id="head">Overview (2013-present)</h3>
+		<div id="visible">
+			<div class="flex">
+				<a href="javascript:" id="img_lnk">
+					<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/GBR/Goodwood/overall.gif' useMap="#zoom_map">
+				</a>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="years">
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('G52')">Circuit</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('H13')">Festival of Speed</button>
+				</div>
+				
+				<div class="layouts" id="Circuit" style="display:inherit"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button' id='B_G52' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/C52.gif','name':'Goodwood Circuit','head':'(1952-present)','length':'3.862 km // 2.400 miles','type':'Permanent', 'direction':'Clockwise', 'urlmap':'#', 'elevS':'29m', 'elevF':' '})">1952</button>
+					<button type='button' id='B_G48' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/C48.gif','name':'Goodwood Circuit','head':'(1948-1951)','length':'3.830 km // 2.380 miles','type':'Permanent', 'direction':'Clockwise', 'urlmap':'#', 'elevS':'29m', 'elevF':' '})">1948</button>
+				</div>
+				<div class="layouts" id="Festival of Speed" style="display:none"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<div>
+						<p>2013</p>
+						<button type='button' id='B_H13' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/H13.gif','name':'Festival of Speed','head':'Hillclimb (1993-present)','length':'1.867 km // 1.160 miles','type':'Hill Climb', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 45m', 'elevF':'Finish: 142m'})">Hillclimb</button>
+						<button type='button' id='B_R13' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/R13.gif','name':'Festival of Speed','head':'Forest Rally Stage (2005)','length':'2.669 km // 1.659 miles','type':'Rally Stage', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 162m', 'elevF':'Finish: 166m'})">Rally</button>
+						<button type='button' id='B_S13' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/S13.gif','name':'Festival of Speed','head':'Soapbox track (2000-2004 & 2013-present)','length':'1.163 km // 0.723 miles','type':'Downhill', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 120m', 'elevF':'Finish: 55m'})">Soapbox</button>
+					</div>
+					<div>
+						<p>2006</p>
+						<button type='button' id='B_H06' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/H06.gif','name':'Festival of Speed','head':'Hillclimb (1993-present)','length':'1.867 km // 1.160 miles','type':'Hill Climb', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 45m', 'elevF':'Finish: 142m'})">Hillclimb</button>
+						<button type='button' id='B_R06' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/R06.gif','name':'Festival of Speed','head':'Forest Rally Stage (2006-present)','length':'2.669 km // 1.659 miles','type':'Rally Stage', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 162m', 'elevF':'Finish: 166m'})">Rally</button>
+					</div>
+					<!--<div>
+						2005
+						<button type='button' id='B_H05' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/H05.gif','name':'Festival of Speed','head':'Hillclimb (1993-present)','length':'1.867 km // 1.160 miles','type':'Hill Climb', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 45m // Finish: 142m'})">Hillclimb</button>
+						<button type='button' id='B_R05' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/R05.gif','name':'Festival of Speed','head':'Forest Rally Stage (2005)','length':'2.669 km // 1.659 miles','type':'Rally Stage', 'direction':' ', 'urlmap':'#', 'elevS':'???'})">Rally</button>
+					</div>-->
+					<div>
+						<p>2000</p>
+						<button type='button' id='B_H00' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/H00.gif','name':'Festival of Speed','head':'Hillclimb (1993-present)','length':'1.867 km // 1.160 miles','type':'Hill Climb', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 45m', 'elevF':'Finish: 142m'})">Hillclimb</button>
+						<button type='button' id='B_S00' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/S00.gif','name':'Festival of Speed','head':'Soapbox track (2000-2004 & 2013-present)','length':'1.163 km // 0.723 miles','type':'Downhill', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 120m', 'elevF':'Finish: 55m'})">Soapbox</button>
+					</div>
+					<div>
+						<p>1993</p>
+						<button type='button' id='B_H93' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/H93.gif','name':'Festival of Speed','head':'Hillclimb (1993-present)','length':'1.867 km // 1.160 miles','type':'Hill Climb', 'direction':' ', 'urlmap':'#', 'elevS':'Start: 45m', 'elevF':'Finish: 142m'})">Hillclimb</button>
+					</div>
+					<!--<div>
+						1936
+						<button type='button' id='B_H36' onclick="lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;overall&#34;)') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/H36.gif','name':'Goodwood House','head':'Hillclimb (1936)','length':' km // 0 miles','type':'Hill Climb', 'direction':'', 'urlmap':'#', 'elevS':'Start: ???m // Finish: ???m'})">1936</button>
+					</div>-->
+				</div>
+				<div class="layouts" id="hidden" style="display:none">
+					<button type='button' id='B_overall' onclick="lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/GBR/Goodwood/overall.gif','name':'Goodwood','head':'Overview (2013-present)','length':' ---- // ----','type':' ', 'direction':' ', 'urlmap':'#zoom_map', 'elevS':'55m', 'elevF':' '})">Overview</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">
+			<table>
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type"> </td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction"> </td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">---- // ----</td>
+				</tr>
+				<tr>
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright mutable" id='elevS'>55 m</td>
+				</tr>
+				<tr>
+					<td class="tleft"></td>
+					<td class="tright mutable" id="elevF">Finish: 753 m</td>
+				</tr>
+
+
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/50.8718114,-0.740274" target="_blank">
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						Goodwood Motor Circuit<br>
+						Goodwood<br>
+						Chichester<br>
+						West Sussex<br>
+						United Kingdom
+					</td>
+				</tr>
+				<tr>
+					<td class="tleft">Telephone</td>
+					<td class="tright">+44 1243 755057</td>
+				</tr>
+				<tr>
+					<td class="tleft">Website</td>
+					<td class="tright"><a href="https://www.goodwood.com/grr/" target="_blank">www.goodwood.com</a></td>
+				</tr>
+				<tr>
+					<td class="tleft">Email</td>
+					<td class="tright"><a href="mailto:grrc@goodwood.com">grrc@goodwood.com</a></td>
+				</tr>
+			</table>
+			
+			<table id="extra"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src='../../../..//icons/ico_qmark.png'><a href='https://www.goodwood.com/motorsport/motor-circuit/history/'>1936 Hillclimb mentioned on Goodwood website, layout unkown</a></td></tr>
+				<tr><td><img src='../../../..//icons/ico_star.png'>Rally Stage distance derrived from drawing</td></tr>
+				<tr><td><img src='../../../..//icons/ico_star.png'>Soapbox track distance derrived from drawing</td></tr>
+				<tr><td><img src='../../../..//icons/ico_qmark.png'>2005 Rally stage layout unknown</td></tr>
+				<tr><td><img src='../../../..//icons/ico_link.png'><a href='http://www.motorsportmemorial.org/query.php?db=ct&amp;q=circuit_a&amp;n=125'>Goodwood</a> at Motorsport Memorial</td></tr>
+				<tr><td><img src='../../../..//icons/ico_link.png'><a href='http://www.motorsportmemorial.org/query.php?db=ct&amp;q=circuit_a&amp;n=1240'>Goodwood Hillclimb</a> at Motorsport Memorial</td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 2209181316 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li>Layout - BingMaps Mar21</li>
+				<li><a href='https://en.wikipedia.org/wiki/Goodwood_Festival_of_Speed'>FoS Wikipedia - March 21</a></li>
+				<li><a href='https://en.wikipedia.org/wiki/Goodwood_Circuit'>Goodwood Wikipedia - March 21</a></li>
+				<li><a href='https://www.goodwood.com/'>Goodwood website</a></li>
+				<li><a href='http://www.gdecarli.it/php2/circuit.php?var1=3808&amp;var2=2'>GdCarli</a></li>
+				<li><a href='https://www.youtube.com/watch?v=eF6lgWvzULk'>1948-1952</a></li>
+			</ul>
+		</div>
+		
+		<map name="zoom_map">
+			<area shape="rect" coords="0,604,260,859" href="javascript:ButtonPress(&#34;G52&#34;)">
+			<area shape="rect" coords="380,0,550,525" href="javascript:ButtonPress(&#34;H13&#34;)">
+		</map>
+		<script type="text/javascript">
+			imageMapResize();
+		</script>
+		
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/GBR/Goodwood.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:58:12 GMT -->
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/AUS/FraserPark.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:55:09 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Fraser Park Raceway</title>
+		<meta property="og:title" content="Fraser Park Raceway"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/AUS/FraserPark.html"/>
+		<meta property="og:description" content="Tralee Speedway, Fraser Park Raceway"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/AUS/FraserPark/B80.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Fraser Park Raceway</h1>
+		<h3 class="mutable" id="head">1970-1973 & 1978-1997</h3>
+		<div id="visible">
+			<div class="flex">
+				<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/AUS/FraserPark/B80.gif'>
+			</div>
+
+			<div id= "buttonbox">
+				<div class="years">
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('B80')">1980</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('B78')">1978</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('B74')">1974</button>
+					<button type="button" id='B_B70' onclick="changeYear(this.innerHTML) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/B70.gif','name':'Tralee Speedway','head':'1970-1973 & 1978-1997','length':'0.409 km // 0.254 miles','type':'Dirt oval'})">1970</button>
+				</div>
+				
+				<div class="layouts" id="1980" style="display:inherit"> 
+					<button type='button' id='B_B80' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/B80.gif','name':'Fraser Park Raceway','head':'1970-1973 & 1978-1997','length':'0.409 km // 0.254 miles','type':'Dirt oval'})">Cars</button>
+					<button type='button' id='B_S80' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/S80.gif','name':'Fraser Park Raceway','head':'1970-1973 & 1978-1997','length':'0.364 km // 0.226 miles','type':'Dirt oval'})">Bikes</button>
+				</div>
+				<div class="layouts" id="1978" style="display:none"> 
+					<button type='button' id='B_B78' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/B78.gif','name':'Fraser Park Raceway','head':'1970-1973 & 1978-1997','length':'0.409 km // 0.254 miles','type':'Dirt oval'})">Cars</button>
+					<button type='button' id='B_S78' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/S74.gif','name':'Fraser Park Raceway','head':'1974-1980','length':'0.299 km // 0.186 miles','type':'Dirt oval'})">Bikes</button>
+				</div>
+				<div class="layouts" id="1974" style="display:none"> 
+					<button type='button' id='B_B74' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/B74.gif','name':'Fraser Park Raceway','head':'1974-1978','length':'0.409 km // 0.254 miles','type':'Oval'})">Cars</button>
+					<button type='button' id='B_S74' onclick="lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/AUS/FraserPark/S74.gif','name':'Fraser Park Raceway','head':'1974-1980','length':'0.299 km // 0.186 miles','type':'Dirt oval'})">Bikes</button>
+				</div>
+				<div class="layouts" id="1970" style="display:none"> 
+					&nbsp;
+				</div>
+			</div>
+		</div>
+		
+		<div id= "table">	
+			<table>			
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Dirt Oval</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright" id="direction">Counter Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">0.409 km // 0.254 miles</td>
+				</tr>
+				<tr>		 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright" id='elev'>624 m</td>
+				</tr>
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/-35.38945,149.17910" target="_blank">
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						Environa 2620<br>
+						New South Wales<br>
+						Australia<br>
+					</td>
+				</tr>
+			</table>
+			
+			<table id="extra"> 
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+					<tr><td><img src='../../../..//icons/ico_star.png'>Lenght of inner oval derrived from drawing</td></tr>
+					<tr><td><img src='../../../..//icons/ico_star.png'>Banking derrived from photographs</td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 2105280505 UTC</div>	
+		<div id="sources">
+			<p id="source_head">Sources</p>	
+			<ul>
+				<li><a href='https://www.facebook.com/permalink.php?story_fbid=2011260695856857&amp;id=1798898647093064&amp;__tn__=-R'>Lost Dirt Tracks FB Group</a></li>
+				<li><a href='http://www.speedwayandroadracehistory.com/canberra-tralee---fraser-park-speedway-1970.html'>Speedway and Roadrace History</a></li>
+				<li><a href='https://en.wikipedia.org/wiki/Tralee_Speedway'>Wikipedia Tralee Speedway May 21</a></li>
+				<li><a href='https://www.youtube.com/watch?v=lXwmVxrE0po'>Layout - 74 Speedway</a></li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/AUS/FraserPark.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:55:09 GMT -->
+</html>

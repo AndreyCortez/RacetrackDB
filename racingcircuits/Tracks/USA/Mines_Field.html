@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Mines_Field.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:14 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Mines Field</title>
+		<meta property="og:title" content="Mines Field / Los Angeles Speedway"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Mines_Field.html"/>
+		<meta property="og:description" content="Mines Field / Los Angeles Speedway 1932-1940"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Mines_Field/1936.gif"/>
+	</head>
+
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Los Angeles Speedway</h1>
+		<h3 class="mutable" id="head">1936-1940</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<a id="img_lnk">
+					<img id="layout_img" class="mutable" alt="layout" src='../../../..//Tracks/USA/Mines_Field/1936.gif'>
+				</a>
+			</div>
+
+			<div id= "buttonbox">	<!-- Section for changing yearly layout changes and switch between multi layout options-->
+									<!--Minimum input for changeImage({'layout_img':'','head':'','length':'','type':'', 'direction':''})-->
+				<div class="years"> <!-- Switch between changed layouts over time. See script.js for onclick functions. Each Year needs a layouts div with the year as id-->
+					
+					<button type='button' id='B_36' onclick=" lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Mines_Field/1936.gif','name':'Los Angeles Speedway','head':'1936-1940','length':'1.609 km // 1.000 miles','type':'Dirt', 'direction':'Counter Clockwise'})">1936</button>
+					<button type='button' id='B_34' onclick=" lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Mines_Field/1934.gif','name':'Mines Field','head':'1934','length':'2.510 km // 1.560 miles','type':'Dirt', 'direction':'Counter Clockwise'})">1934</button>
+					<button type='button' id='B_32' onclick=" lnk2html(this.id) ; changeImage({'layout_img':'./Tracks/USA/Mines_Field/1932.gif','name':'Mines Field','head':'1932-1936','length':'3.073 km // 1.910 miles','type':'Dirt', 'direction':'Counter Clockwise'})">1932</button>
+				</div>
+				<div class="layouts" id="B_YYYY-N" style="display:inherit"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+			</div>
+		</div>
+		
+		<div id= "table">	<!--Tabulated data. Can be changed with key:value pair entered in object passed to changeImage(). takes the form of id:string. See script.js for details-->
+			<table>			<!--More rows can be add and changed on button click,as long as id:string convention described in changeImage() documentation is followed.-->
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Dirt</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Counter Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">1.609 km // 1.000 miles</td>
+				</tr>
+				<tr>		<!-- elevation above sealevel found via google maps--> 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright">30m</td>
+				</tr>
+				
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/33.9415889,-118.4107187" target="_blank"><!-- change coordinates in url to tracks coords-->
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						8540 S. Sepulveda Blvd<br>
+						90045 Los Angeles<br>
+						California<br>
+						USA
+					</td>
+				</tr>
+			</table>
+			
+			<table id="extra"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src="../../../..//icons/ico_unkwn.png">Further info required - Exact layout of the longer variant used in 32-36.</td></tr>
+				<tr><td><img src="../../../..//.icons/ico_lnks.png">Mines Field at <a href='http://www.motorsportmemorial.org/query.php?db=ct&amp;q=circuit_a&amp;n=4157'>Motorsport Memorial</a></td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1907190544 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<a href="http://www.silhouet.com/motorsport/tracks/usa/mines_field.html"><li>Length - Silhouet.com</li></a>
+				<a href="http://mil.library.ucsb.edu/apcatalog/report/report.php?filed_by=C-3060"><li>Layout 32,34 - Aerial Survey Flight C_3060, Frame 24</li></a>
+				<a href="http://mil.library.ucsb.edu/apcatalog/report/report.php?filed_by=AXJ-1938"><li>Layout 36 - Aerial Survey Flight AXJ-1938</li></a>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/Mines_Field.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:14 GMT -->
+</html>

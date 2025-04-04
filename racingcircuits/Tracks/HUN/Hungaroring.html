@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/HUN/Hungaroring.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:19:53 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Hungaroring</title>
+		<meta property="og:title" content="Hungaroring"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/HUN/Hungaroring.html"/>
+		<meta property="og:description" content="Hungaroring track layouts 1986-present"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/HUN/Hungaroring/GP05.gif"/>
+	</head>
+	
+	
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 id="name">Hungaroring</h1>
+		<h3 class="mutable" id="head">Grand Prix Circuit (2003-present)</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<a href="javascript:" id="img_lnk">
+					<img class="mutable" id="layout_img"  alt="layout" src='../../../..//Tracks/HUN/Hungaroring/GP05.gif'>
+				</a>
+			</div>
+
+			<div id= "buttonbox">	<!-- Section for changing yearly layout changes and switch between multi layout options-->
+									<!--Minimum input for changeImage({'layout_img':'','head':'','length':'','type':'', 'direction':''})-->
+				<div class="years"> <!-- Switch between changed layouts over time. See script.js for onclick functions. Each Year needs a layouts div with the year as id-->
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('GP05')">2005</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('GP03')">2003</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('GP02')">2002</button>
+					<button type='button' id='B_GP96' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/GP96.gif','head':'Grand Prix Circuit (1989-2002)','length':'3.968 km // 2.466 miles','type':'Permanent', 'direction':'Clockwise'})">1996</button>
+					<button type='button' id='B_GP89' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/GP89.gif','head':'Grand Prix Circuit (1989-2002)','length':'3.968 km // 2.466 miles','type':'Permanent', 'direction':'Clockwise'})">1989</button>
+					<button type='button' id='B_GP86' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/GP86.gif','head':'Grand Prix Circuit (1986-1988)','length':'4.014 km // 2.494 miles','type':'Permanent', 'direction':'Clockwise'})">1986</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('P86')">Proposals</button>
+				</div>
+				<div class="layouts" id="2005" style="display:inherit"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button' id='B_GP05' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/GP05.gif','head':'Grand Prix Circuit (2003-present)','length':'4.381 km // 2.722 miles','type':'Permanent', 'direction':'Clockwise'})">Grand Prix</button>
+					<button type='button' id='B_K05' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/HUN/HungaroringKart.html#K03bb') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/K05.gif','head':'Kart Track (2003(?)-present)','length':'0.386 km // 0.240 miles','type':'Temporary', 'direction':'Clockwise'})">Kart</button>
+				</div>
+				<div class="layouts" id="2003" style="display:none"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button' id='B_GP03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/GP03.gif','head':'Grand Prix Circuit (2003-present)','length':'4.381 km // 2.722 miles','type':'Permanent', 'direction':'Clockwise'})">Grand Prix</button>
+					<button type='button' id='B_K03' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/HUN/HungaroringKart.html#K03bb') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/K03.gif','head':'Kart Track (2003(?)-present)','length':'0.386 km // 0.240 miles','type':'Temporary', 'direction':'Clockwise'})">Kart</button>
+					<button type='button' id='B_MX03' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MXb&#34;)') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/MX03.gif','head':'Motocross Track (2002(?)-2005(?))','length':'1.670 km // 1.038 miles','type':'Off Road', 'direction':'Counter Clockwise'})">Motocross</button>
+				</div>
+				<div class="layouts" id="2002" style="display:none"> <!--Switches between coexisting layouts. See script.js for further details. Latest layutset set display:inherit. Older to display:none.-->
+					<button type='button' id='B_GP02' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/GP02.gif','head':'Grand Prix Circuit (1989-2002)','length':'3.968 km // 2.466 miles','type':'Permanent', 'direction':'Clockwise'})">Grand Prix</button>
+					<button type='button' id='B_K02' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/HUN/HungaroringKart.html#K02b') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/K02.gif','head':'Kart Track (2002(?)-present)','length':'0.278 km // 0.173 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+					<button type='button' id='B_MX02' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MXb&#34;)') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/MX02.gif','head':'Motocross Track (2002(?)-2005(?))','length':'1.670 km // 1.038 miles','type':'Off Road', 'direction':'Counter Clockwise'})">Motocross</button>
+				</div>
+				<div class="layouts" id="Proposals" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					<button type='button' id='B_P03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/P03.gif','head':'Grand Prix Circuit (2003)','length':'4.053 km // 2.518 miles','type':'Permanent', 'direction':'Clockwise'})">2003</button>
+					<button type='button' id='B_P86' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/P86.gif','head':'Grand Prix Circuit (1986)','length':'3.890 km // 2.417 miles','type':'Permanent', 'direction':'Clockwise'})">1896</button>
+				</div>
+				<div class="layouts" id="hidden" style="display:none"> <!-- hidden buttons for zoomed views-->
+					<button type='button' id='B_Mxb' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX02&#34;)') ; changeImage({'layout_img':'./Tracks/HUN/Hungaroring/MX_big.gif','head':'Motocross Track (2002(?)-2005(?))','length':'1.670 km // 1.038 miles','type':'Off Road', 'direction':'Counter Clockwise'})">MX</button>
+				</div>
+				<div class="layouts" id="1996" style="display:none">
+					&nbsp;
+				</div>
+				<div class="layouts" id="1989" style="display:none">
+					&nbsp;
+				</div>
+				<div class="layouts" id="1986" style="display:none">
+					&nbsp;
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">	<!--Tabulated data. Can be changed with key:value pair entered in object passed to changeImage(). takes the form of id:string. See script.js for details-->
+			<table>			<!--More rows can be add and changed on button click,as long as id:string convention described in changeImage() documentation is followed.-->
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Permanent</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">4.381 km // 2.722 miles</td>
+				</tr>
+				<tr>		<!-- elevation above sealevel found via google maps--> 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright">264 m</td>
+				</tr>
+				
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/47.582222,19.251111" target="_blank">
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						Hungaroring utca 10<br>
+						2146 Mogyoród<br>
+						Hungary<br>
+					</td>
+				</tr>
+				<tr>
+					<td class="tleft">Telephone</td>
+					<td class="tright">+36 28 444 444</td>
+				</tr>
+				<tr>
+					<td class="tleft">Website</td>
+					<td class="tright"><a href="https://hungaroring.hu/en/">www.hungaroring.hu</a></td>
+				</tr>
+				<tr>
+					<td class="tleft">Email</td>
+					<td class="tright"><a href="mailto:office@hungaroring.hu">office@hungaroring.hu</a></td>
+				</tr>
+			</table>
+			
+			<table id="extra"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src='../../../..//icons/ico_link.png'><a href='https://www.rally-maps.com/Szilveszter-Rallye-2019'>Hungaroring</a> at Rally-Maps.com</td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1812070735 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li><a href="http://www.gdecarli.it/php/circuit.php?var1=420&amp;var2=2">Layout, Proposals, Elevation - Gdecarli</a></li>
+				<li><a href="http://racingcircuits.info/europe/hungary/hungaroring.html">Layout, Length - Racingcircuits.info</a></li>
+				<li>Layout - Google Earth Nov18</li>
+				<li>Layout 03 proposal - RacingCircuitsDatabase</li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/HUN/Hungaroring.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:19:53 GMT -->
+</html>

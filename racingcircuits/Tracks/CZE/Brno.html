@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/CZE/Brno.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:18:47 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Automotodrom Brno</title>
+		<meta property="og:title" content="Automotodrom Brno"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/CZE/Brno.html"/>
+		<meta property="og:description" content="Automotodrom Brno 1930-present"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/CZE/Brno/GP06b.gif"/>
+	</head>
+	
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Automotodrom Brno</h1>
+		<h3 class="mutable" id="head">Grand Prix Circuit – Bike variant (1987-present)</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<a href="javascript:" id="img_lnk">
+					<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/CZE/Brno/GP06b.gif'>
+				</a>
+			</div>
+			<div id= "buttonbox">
+				<div class="years">
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('GP06b')">2006</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('GP96')">1996</button>
+					<button type='button' id='B_GP87' onclick="changeYear(this.innerHTML) ; enableHref('javascript:ButtonPress(&#34;GP87s&#34;)') ; changeImage({'layout_img':'./Tracks/CZE/Brno/GP87.gif','name':'Automotodrom Brno','head':'1987-present','length':'5.403 km // 3.357 miles','alt':'441','type':'Permanent', 'direction':'Clockwise'})">1987</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('GP78')">1978</button>
+					<button type='button' id='B_GP75' onclick="changeYear(this.innerHTML) ; enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP75.gif','name':'Masarykuv Okruh','head':'1975-1986','length':'10.925 km // 6.788 miles','alt':'270','type':'Temporary', 'direction':'Clockwise'})">1975</button>
+					<button type='button' id='B_GP64' onclick="changeYear(this.innerHTML) ; enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP64.gif','name':'Masarykuv Okruh','head':'1964-1974','length':'13.941 km // 8.663 miles','alt':'270','type':'Temporary', 'direction':'Clockwise'})">1964</button>
+					<button type='button' id='B_GP49' onclick="changeYear(this.innerHTML) ; enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP49.gif','name':'Masarykuv Okruh','head':'1949-1963','length':'17.800 km // 11.060 miles','alt':'270','type':'Temporary', 'direction':'Clockwise'})">1949</button>
+					<button type='button' id='B_GP30' onclick="changeYear(this.innerHTML) ; enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP30.gif','name':'Masarykuv Okruh','head':'1930-1938','length':'29.142 km // 18.108 miles','alt':'270','type':'Temporary', 'direction':'Counter Clockwise'})">1930</button>
+					<button type="button" onclick="changeYear(this.innerHTML) ; ButtonPress('P72')">Proposals</button>
+				</div>
+				
+				<div class="layouts" id="2006" style="display:inherit">
+					<button type='button' id='B_GP06c' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP06c.gif','name':'Automotodom Brno','head':'Grand Prix Circuit – Car variant(1987-present)','length':'5.403 km // 3.357 miles','alt':'441','type':'Permanent', 'direction':'Clockwise'})">Car</button>
+					<button type='button' id='B_GP06b' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP06b.gif','name':'Automotodrom Brno','head':'Grand Prix Circuit – Bike variant (1987-present)','length':'5.403 km // 3.357 miles','alt':'441','type':'Permanent', 'direction':'Clockwise'})">Bike</button>
+					<button type='button' id='B_K06' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/K06.gif','name':'Automotodrom Brno','head':'Kart Track (1996-present)','length':'0.423 km // 0.263 miles','alt':'437','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+				</div>
+				<div class="layouts" id="1996" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					<button type='button' id='B_GP96' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP96.gif','name':'Automotodrom Brno','head':'Grand Prix Circuit (1987-present)','length':'5.403 km // 3.357 miles','alt':'441','type':'Permanent', 'direction':'Clockwise'})">GP</button>
+					<button type='button' id='B_K96' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/K96.gif','name':'Automotodrom Brno','head':'Kart Track (1996-present)','length':'0.423 km // 0.263 miles','alt':'437','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+				</div>
+				<div class="layouts" id="1987" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+				<div class="layouts" id="1978" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					<button type='button' id='B_GP78' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP78.gif','name':'Masarykuv Okruh','head':'1975-1986','length':'10.925 km // 6.788 miles','alt':'270','type':'Temporary', 'direction':'Clockwise'})">Car</button>
+					<button type='button' id='B_B78' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/B78.gif','name':'Masarykuv Okruh','head':'1978-1986','length':'10.938 km // 6.796 miles','alt':'270','type':'Temporary', 'direction':'Clockwise'})">Bike</button>
+				</div>
+				<div class="layouts" id="1975" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+				<div class="layouts" id="1964" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+				<div class="layouts" id="1949" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+				<div class="layouts" id="1930" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					&nbsp;
+				</div>
+
+				<div class="layouts" id="Proposals" style="display:none"> <!--Singular layouts need an ided div but no buttons required-->
+					<button type='button' id='B_P72' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/P72.gif','name':'Automotodrom Brno','head':'1972 Proposal','length':'4.990 km // 3.101 miles','alt':'279','type':'Semi Permanent', 'direction':'Clockwise'})">1972</button>
+					<button type='button' id='B_P71' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/P71.gif','name':'Automotodrom Brno','head':'1971 Proposal','length':'4.387 km // 2.726 miles','alt':'270','type':'Permanent', 'direction':'Clockwise'})">1971</button>
+					<button type='button' id='B_Punk' onclick="enableHref('') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/Punk.gif','name':'Automotodrom Brno','head':'unkown Proposal','length':'5.879 km // 3.653 miles','alt':'400','type':'Semi Permanent', 'direction':'Clockwise'})">unknown</button>
+				</div>
+				<div class="layouts" id="hidden" style="display:none">
+					<button type='button' id='B_GP87s' onclick="enableHref('javascript:ButtonPress(&#34;GP87&#34;)') ; lnk2html(this.id) ;  changeImage({'layout_img':'./Tracks/CZE/Brno/GP87s.gif','name':'Automotodrom Brno','head':'1987-present','length':'5.403 km // 3.357 miles','alt':'441','type':'Permanent', 'direction':'Clockwise'})">Zoom</button>
+
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">	<!--Tabulated data. Can be changed with key:value pair entered in object passed to changeImage(). takes the form of id:string. See script.js for details-->
+			<table>			<!--More rows can be add and changed on button click,as long as id:string convention described in changeImage() documentation is followed.-->
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Permanent</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">5.403 km // 3.357 miles</td>
+				</tr>
+				<tr>		<!-- elevation above sealevel found via google maps--> 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright mutable" id="alt">441 m</td>
+				</tr>
+				
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/49.2070312,16.4465174" target="_blank"><!-- change coordinates in url to tracks coords-->
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						Masarykův okruh 201<br>
+						664 81 Ostrovačice<br>
+						Czech republic<br>
+					</td>
+				</tr>
+				<tr>
+					<td class="tleft">Telephone</td>
+					<td class="tright">+420 546 123 300</td>
+				</tr>
+				<tr>
+					<td class="tleft">Website</td>
+					<td class="tright"><a href="https://www.automotodrombrno.cz/en/">www.automotodrombrno.cz</a></td>
+				</tr>
+				<tr>
+					<td class="tleft">Email</td>
+					<td class="tright"><a href="mailto:info@automotodrombrno.cz">info@automotodrombrno.cz</a></td>
+				</tr>
+			</table>
+			
+			<table id="extra"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr>
+					<td><img src="../../../..//icons/ico_unkwn.png">Sources mention more proposal for the permanent circuit other then the ones shown, layouts are unknown as of now.</td>
+				</tr>
+				<tr><td><img src='../../../..//icons/ico_link.png'><a href='http://www.motorsportmemorial.org/query.php?db=ct&amp;q=circuit_a&amp;n=699,700,701'>Brno</a> at Motorsport Memorial</td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1908271930 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li><a href="https://www.moto.cz/okruhy-a-historie/byvale-ceske-okruhy/74-brno">Corner Names - Moto.cz via GoggleTranslate</a></li>
+				<li><a href="http://www.kolumbus.fi/leif.snellman/">1930 Circuit Length</a></li>
+				<li><a href="https://www.automotodrombrno.cz/">Circuits Length</a></li>
+				<li><a href="https://www.racingcircuits.info/europe/czech-republic/brno.html">Modern Circuit Stats</a></li>
+				<li><a href="https://brno.idnes.cz/v-zaprasenem-skladu-nasli-model-masarykova-okruhu-z-roku-1972-pqu-/brno-zpravy.aspx?c=A120919_1830796_brno-zpravy_bor">P72 layout</a></li>
+				<li><a href="https://www.youtube.com/watch?v=C2P3vXgCFus">78-86 bike layout</a></li>
+				<li>Old Circuit layout - Sergio Loro via Email</li>
+				<li>Old Circuit layout - Ozpata via Email</li>
+				<li>Old Circuit layout - GoogleMaps & StreetView Aug19</li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/CZE/Brno.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:18:47 GMT -->
+</html>

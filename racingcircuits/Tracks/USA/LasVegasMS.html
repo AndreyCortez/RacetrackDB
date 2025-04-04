@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html>
+	
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/LasVegasMS.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:12 GMT -->
+<head>
+		<meta name="author" content="MichiK">
+		<meta charset="utf-8"/>
+		<base >
+		<link href="../../../..//default.css" type="text/css" rel="stylesheet">
+<!--Remove async if trouble loading #url-->		<script async src="../../../..//scripts.js"></script>
+		<meta property="og:type" content="website"/>
+		<title>Las Vegas Motor Speedway</title>
+		<meta property="og:title" content="Las Vegas Motor Speedway"/>
+		<meta property="og:url" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/LasVegasMS.html"/>
+		<meta property="og:description" content="Las Vegas Motor Speedway layouts 1972-present"/>	
+		<meta property="og:image" content="http://www.the-fastlane.co.uk/racingcircuits/Tracks/USA/LasVegasMS/SS17.gif"/>
+	</head>
+	
+	
+	<style>
+		.layouts div {width: 100/n%;}	<!-- Coloum style buttons for minor layout variations see Buenos Aires -->
+	</style>
+	
+	
+	<body onload="buildEntries() ; lnkButtonPress()">
+		<h1 class="mutable" id="name">Las Vegas Motor Speedway</h1>
+		<h3 class="mutable" id="head">Superspeedway (2006-present)</h3>
+		<div id="visible">
+			
+			<div class="flex">
+				<a href="javascript:" id="img_lnk">
+					<img class="mutable" id="layout_img" alt="layout" src='../../../..//Tracks/USA/LasVegasMS/SS17.gif'>
+				</a>
+			</div>
+
+			<div id= "buttonbox">	<!-- Section for changing yearly layout changes and switch between multi layout options-->
+									<!--Minimum input for changeImage({'layout_img':'','head':'','length':'','type':'', 'direction':''})-->
+				<div class="years"> <!-- Switch between changed layouts over time. See script.js for onclick functions. Each Year needs a layouts div with the year as id-->
+					<button type="button" onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS17')">2017</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS15')">2015</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS14')">2014</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS12')">2012</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS10')">2010</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS06')">2006</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS03')">2003</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS00')">2000</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS97')">1997</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('SS96')">1996</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('RC95')">1995</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('RC94')">1994</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('RC85')">1985</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('RC83')">1983</button>
+					<button type='button' onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; ButtonPress('RC72')">1972</button>
+					<button type='button' id="B_Proposal" onclick=" lnk2html(this.id) ; changeYear(this.innerHTML) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/P95.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway proposal (1995)','length':'2.406 km // 1.495 miles','type':'Permanent', 'direction':'Counter Clockwise'})">Proposal</button>
+				</div>
+				
+				
+				<div class="layouts" id="2017" style="display:inherit">
+					<div>
+						<button type='button' id='B_SS17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS17.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (2006-present)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_IO17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO17.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC17.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs17.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+						<button type='button' id='B_MO17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MO17.gif','name':'Las Vegas Motor Speedway','head':'¼ mile Oval (2006-present)','length':'0.523 km // 0.325 miles','type':'Oval', 'direction':'Counter Clockwise'})">Quatermile</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC17.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL17.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 2.931 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCLc17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCLc17.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course – chicane variant (2006-present)','length':'4.737 km // 2.943 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course – chicane</button>
+						<button type='button' id='B_RCNL17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL17.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNLc17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNLc17.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course – chicane variant (2006-present)','length':'4.263 km // 2.649 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course – chicane</button>
+					</div>
+					<div>
+						<button type='button' id='B_RCNS17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNS17.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+						<button type='button' id='B_RCNSc17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNSc17.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course – chicane variant (2006-present)','length':'2.249 km // 1.397 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course – chicane</button>
+						<button type='button' id='B_RCN17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN17.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL17.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS17.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS17.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O17.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO17.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Clay Oval', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K17' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K17.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D17' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D17.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+						<button type='button' id='B_MX17' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX14B&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX17.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2014-present)','length':'1.384 km // 0.860 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Off Road</button>
+					</div>
+					<div>
+						<button type='button' id='B_X17L' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X17L.gif','name':'Exotics Racing','head':'Exotics Racing Course (2012-present)','length':'2.626 km // 1.632 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics</button>
+						<button type='button' id='B_X17M' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X17M.gif','name':'Exotics Racing','head':'Exotics Racing Course medium variant (2012-present)','length':'2.125 km // 1.320 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics med</button>
+						<button type='button' id='B_X17Sa' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X17Sa.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant A (2012-present)','length':'1.576 km // 0.979 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short A</button>
+						<button type='button' id='B_X17Sb' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X17Sb.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant B (2012-present)','length':'1.147 km // 0.713 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short B</button>
+						<button type='button' id='B_KX17' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;Kx17a&#34;) ; changeYear(&#34;Kx_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/KX17.gif','name':'Las Vegas Motor Speedway','head':'Exotics Racing Kart Track (2017-present)','length':'0.422 km // 0.262 miles','type':'Temporary', 'direction':'Counter Clockwise'})">Exotics Kart</button>
+					</div>
+				</div>
+				<div class="layouts" id="2015" style="display:none">
+					<div>
+						<button type='button' id='B_SS15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS15.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (2006-present)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_IO15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO15.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC15.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs15.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+						<button type='button' id='B_MO15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MO15.gif','name':'Las Vegas Motor Speedway','head':'¼ mile Oval (2006-present)','length':'0.523 km // 0.325 miles','type':'Oval', 'direction':'Counter Clockwise'})">Quatermile</button>
+					</div>
+					<div>	
+						<button type='button' id='B_RC15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC15.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL15.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 2.931 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCLc15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCLc15.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course – chicane variant (2006-present)','length':'4.737 km // 2.943 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course – chicane</button>
+						<button type='button' id='B_RCNL15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL15.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNLc15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNLc15.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course – chicane variant (2006-present)','length':'4.263 km // 2.649 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course – chicane</button>
+					</div>
+					<div>
+						<button type='button' id='B_RCNS15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNS15.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+						<button type='button' id='B_RCNSc15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNSc15.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course – chicane variant (2006-present)','length':'2.249 km // 1.397 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course – chicane</button>
+						<button type='button' id='B_RCN15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN15.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL15.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS15.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS15.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>	
+					<div>
+						<button type='button' id='B_O15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O15.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO15.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Clay Oval', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K15' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K15.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D15.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+						<button type='button' id='B_MX15' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX14B&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX15.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2014-present)','length':'1.384 km // 0.860 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Off Road</button>
+						<button type='button' id='B_A15' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/A15.gif','name':'Las Vegas Motor Speedway','head':'Red Bull Air Race Course (2014-2016)','length':'3.020 km // 1.877 miles','type':'Air', 'direction':'Clockwise'})">Air Race</button>
+					</div>
+					<div>		
+						<button type='button' id='B_X15L' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X15L.gif','name':'Exotics Racing','head':'Exotics Racing Course (2012-present)','length':'2.626 km // 1.632 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics</button>
+						<button type='button' id='B_X15M' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X15M.gif','name':'Exotics Racing','head':'Exotics Racing Course medium variant (2012-present)','length':'2.125 km // 1.320 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics med</button>
+						<button type='button' id='B_X15Sa' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X15Sa.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant A (2012-present)','length':'1.576 km // 0.979 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short A</button>
+						<button type='button' id='B_X15Sb' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X15Sb.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant B (2012-present)','length':'1.147 km // 0.713 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short B</button>
+						<button type='button' id='B_KX15' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;Kx15b&#34;) ; changeYear(&#34;Kx_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/KX15.gif','name':'Las Vegas Motor Speedway','head':'Exotics Racing Kart Track (2015-2016)','length':'0.335 km // 0.208 miles','type':'Temporary', 'direction':'Counter Clockwise'})">Exotics Kart</button>
+					</div>
+				</div>
+				<div class="layouts" id="2014" style="display:none">
+					<div>
+						<button type='button' id='B_SS14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS14.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (2006-present)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_IO14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO14.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC14.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs14.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+						<button type='button' id='B_MO14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MO14.gif','name':'Las Vegas Motor Speedway','head':'¼ mile Oval (2006-present)','length':'0.523 km // 0.325 miles','type':'Oval', 'direction':'Counter Clockwise'})">Quatermile</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC14.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL14.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 2.931 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCLc14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCLc14.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course – chicane variant (2006-present)','length':'4.737 km // 2.943 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course – chicane</button>
+						<button type='button' id='B_RCNL14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL14.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNLc14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNLc14.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course – chicane variant (2006-present)','length':'4.263 km // 2.649 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course – chicane</button>
+					</div>
+					<div>
+						<button type='button' id='B_RCNS14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNs14.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+						<button type='button' id='B_RCNSc14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNsc14.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course – chicane variant (2006-present)','length':'2.249 km // 1.397 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course – chicane</button>
+						<button type='button' id='B_RCN14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN14.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL14.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS14.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS14.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O14.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO14.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Permanent', 'direction':'Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K14' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K14.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D14.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Permanent', 'direction':'Clockwise'})">Dragstrip</button>
+						<button type='button' id='B_MX14' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX14B&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX14.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2014-present)','length':'1.384 km // 0.860 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Off Road</button>
+						<button type='button' id='B_A14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/A14.gif','name':'Las Vegas Motor Speedway','head':'Red Bull Air Race Course (2014-2016)','length':'3.020 km // 1.877 miles','type':'Air', 'direction':'Clockwise'})">Air Race</button>
+						<button type='button' id='B_B14' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/B14.gif','name':'Las Vegas Motor Speedway','head':'Baja 1000 Qualifying Course (2014)','length':'5.793 km // 3.600 miles','type':'Temporary mixed surface', 'direction':'Clockwise'})">Baja</button>
+					</div>
+					<div>
+						<button type='button' id='B_X14L' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X14L.gif','name':'Exotics Racing','head':'Exotics Racing Course (2012-present)','length':'2.626 km // 1.632 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics</button>
+						<button type='button' id='B_X14M' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X14M.gif','name':'Exotics Racing','head':'Exotics Racing Course medium variant (2012-present)','length':'2.125 km // 1.320 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics med</button>
+						<button type='button' id='B_X14Sa' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X14Sa.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant A (2012-present)','length':'1.576 km // 0.979 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short A</button>
+						<button type='button' id='B_X14Sb' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/X14Sb.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant B (2012-present)','length':'1.147 km // 0.713 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short B</button>
+					</div>
+				</div>
+				<div class="layouts" id="2012" style="display:none">
+					<div>
+						<button type='button' id='B_SS12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS12.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (2006-present)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_IO12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO12.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC12.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs12.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+						<button type='button' id='B_MO12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MO12.gif','name':'Las Vegas Motor Speedway','head':'¼ mile Oval (2006-present)','length':'0.523 km // 0.325 miles','type':'Oval', 'direction':'Counter Clockwise'})">Quatermile</button>
+					</div>
+					<div>					
+						<button type='button' id='B_RC12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC12.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL12.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 2.931 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCLc12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCLc12.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course – chicane variant (2006-present)','length':'4.737 km // 2.943 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course – chicane</button>
+						<button type='button' id='B_RCNL12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL12.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNLc12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNLc12.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course – chicane variant (2006-present)','length':'4.263 km // 2.649 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course – chicane</button>
+					</div>
+					<div>					
+						<button type='button' id='B_RCNS12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNs12.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+						<button type='button' id='B_RCNSc12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNsc12.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course – chicane variant (2006-present)','length':'2.249 km // 1.397 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course – chicane</button>
+						<button type='button' id='B_RCN12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN12.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL12.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS12.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS12.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>					
+						<button type='button' id='B_O12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O12.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO12.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Permanent', 'direction':'Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K12' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K12.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D12' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D12.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Permanent', 'direction':'Clockwise'})">Dragstrip</button>
+						<button type='button' id='B_MX12' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX10B&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX12.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2010-2013)','length':'1.788 km // 1.111 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Off Road</button>
+					</div>
+					<div>					
+						<button type='button' id='B_X12L' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/XL12.gif','name':'Exotics Racing','head':'Exotics Racing Course (2012-present)','length':'2.626 km // 1.632 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics</button>
+						<button type='button' id='B_X12M' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/XM12.gif','name':'Exotics Racing','head':'Exotics Racing Course medium variant (2012-present)','length':'2.125 km // 1.320 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics med</button>
+						<button type='button' id='B_X12Sa' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/XSa12.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant A (2012-present)','length':'1.576 km // 0.979 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short A</button>
+						<button type='button' id='B_X12Sb' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/XSb12.gif','name':'Exotics Racing','head':'Exotics Racing Course short variant B (2012-present)','length':'1.147 km // 0.713 miles','type':'Permanent', 'direction':'Clockwise'})">Exotics short B</button>
+					</div>
+				</div>
+				<div class="layouts" id="2010" style="display:none">
+					<div>
+						<button type='button' id='B_SS10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS10.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (2006-present)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_IO10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO10.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC10.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs10.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+						<button type='button' id='B_MO10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MO10.gif','name':'Las Vegas Motor Speedway','head':'¼ mile Oval (2006-present)','length':'0.523 km // 0.325 miles','type':'Oval', 'direction':'Counter Clockwise'})">Quatermile</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC10.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL10.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 2.931 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCLc10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCLc10.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course – chicane variant (2006-present)','length':'4.737 km // 2.943 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course – chicane</button>
+						<button type='button' id='B_RCNL10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL10.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNLc10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNLc10.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course – chicane variant (2006-present)','length':'4.263 km // 2.649 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course – chicane</button>
+					</div>
+					<div>
+						<button type='button' id='B_RCNS10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNs10.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+						<button type='button' id='B_RCNSc10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNsc10.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course – chicane variant (2006-present)','length':'2.249 km // 1.397 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course – chicane</button>
+						<button type='button' id='B_RCN10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN10.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL10.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS10.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS10.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O10.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO10.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K10' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K10.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D10' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D10.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Permanent', 'direction':'Clockwise'})">Dragstrip</button>
+						<button type='button' id='B_MX10' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX10B&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX10.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2010-2013)','length':'1.788 km // 1.111 miles','type':'Off-Road', 'direction':'Clockwise'})">Off Road</button>
+					</div>
+				</div>
+				<div class="layouts" id="2006" style="display:none">
+					<div>
+						<button type='button' id='B_SS06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS06.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (2006-present)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_IO06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO06.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC06.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs06.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+						<button type='button' id='B_MO06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MO06.gif','name':'Las Vegas Motor Speedway','head':'¼ mile Oval (2006-present)','length':'0.523 km // 0.325 miles','type':'Oval', 'direction':'Counter Clockwise'})">Quatermile</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC06.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL06.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 2.931 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCLc06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCLc06.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course – chicane variant (2006-present)','length':'4.737 km // 2.943 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course – chicane</button>
+						<button type='button' id='B_RCNL06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL06.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNLc06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNLc06.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course – chicane variant (2006-present)','length':'4.263 km // 2.649 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course – chicane</button>
+					</div>	
+					<div>
+						<button type='button' id='B_RCNS06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNs06.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+						<button type='button' id='B_RCNSc06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNsc06.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course – chicane variant (2006-present)','length':'2.249 km // 1.397 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course – chicane</button>
+						<button type='button' id='B_RCN06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN06.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL06.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS06.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS06.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O06.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO06.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Clay Oval', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K06' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K06.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D06' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D06.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+						<button type='button' id='B_MX06' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX06B&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX06.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track ((?)-present)','length':'1.798 km // 1.117 miles','type':'Off-Road', 'direction':'Clockwise'})">Off Road</button>
+					</div>
+				</div>
+				<div class="layouts" id="2003" style="display:none">
+					<div>
+						<button type='button' id='B_SS03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS03.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (1996-2005)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_Rov03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/Rov03.gif','name':'Las Vegas Motor Speedway','head':'Roval (1996-2005)','length':'4.022 km // 2.499 miles','type':'Roval', 'direction':'Counter Clockwise'})">Roval</button>
+						<button type='button' id='B_RovM03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovM03.gif','name':'Las Vegas Motor Speedway','head':'Medium Roval (1996-2005)','length':'3.460 km // 2.150 miles','type':'Roval', 'direction':'Counter Clockwise'})">med. Roval</button>
+						<button type='button' id='B_RovS03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovS03.gif','name':'Las Vegas Motor Speedway','head':'Short Roval (1997-2005)','length':'3.698 km // 2.298 miles','type':'Roval', 'direction':'Counter Clockwise'})">short Roval</button>
+					</div>
+					<div>
+						<button type='button' id='B_IO03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO03.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC03.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs03.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC03.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCL03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCL03.gif','name':'Las Vegas Motor Speedway','head':'Long Road Course (2003-present)','length':'4.717 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">Long Road Course</button>
+						<button type='button' id='B_RCNL03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNL03.gif','name':'Las Vegas Motor Speedway','head':'Long North Road Course (2003-present)','length':'4.243 km // 2.636 miles','type':'Permanent', 'direction':'Clockwise'})">Long North Road Course</button>
+						<button type='button' id='B_RCNS03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCNS03.gif','name':'Las Vegas Motor Speedway','head':'Medium North Road Course (2003-present)','length':'2.230 km // 1.386 miles','type':'Permanent', 'direction':'Clockwise'})">med. North Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_RCN03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN03.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCSL03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSL03.gif','name':'Las Vegas Motor Speedway','head':'Long South Road Course (2003-present)','length':'3.895 km // 2.420 miles','type':'Permanent', 'direction':'Clockwise'})">Long South Road Course</button>
+						<button type='button' id='B_RCSS03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCSS03.gif','name':'Las Vegas Motor Speedway','head':'Medium South Road Course (2003-present)','length':'2.864 km // 1.780 miles','type':'Permanent', 'direction':'Clockwise'})">med South Road Course</button>
+						<button type='button' id='B_RCS03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS03.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O03.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO03.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Clay Oval', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K03' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K03.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1996-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D03' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D03.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+						<button type='button' id='B_MX03' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX02-12a&#34;) ; changeYear(&#34;MX_big&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX03.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track ((?)-present)','length':'1.691 km // 1.051 miles','type':'Off-Road', 'direction':'Clockwise'})">Motocross</button>
+					</div>
+				</div>
+				<div class="layouts" id="2000" style="display:none">
+					<div>
+						<button type='button' id='B_SS00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS00.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (1996-2005)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_Rov00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/Rov00.gif','name':'Las Vegas Motor Speedway','head':'Roval (1996-2005)','length':'4.022 km // 2.499 miles','type':'Roval', 'direction':'Counter Clockwise'})">Roval</button>
+						<button type='button' id='B_RovM00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovM00.gif','name':'Las Vegas Motor Speedway','head':'Medium Roval (1996-2005)','length':'3.460 km // 2.150 miles','type':'Roval', 'direction':'Counter Clockwise'})">med. Roval</button>
+						<button type='button' id='B_RovS00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovS00.gif','name':'Las Vegas Motor Speedway','head':'Short Roval (1997-2005)','length':'3.698 km // 2.298 miles','type':'Roval', 'direction':'Counter Clockwise'})">short Roval</button>
+					</div>
+					<div>
+						<button type='button' id='B_IO00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO00.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC00.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs00.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course  – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+					</div>	
+					<div>	
+						<button type='button' id='B_RC00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC00.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCN00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN00.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCS00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS00.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O00.gif','name':'Las Vegas Motor Speedway','head':'Oval (2000-present)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO00.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Clay Oval', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K00' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K00.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1996-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D00' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D00.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (2000-present)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+					</div>	
+				</div>
+				<div class="layouts" id="1997" style="display:none">
+					<div>
+						<button type='button' id='B_SS97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS97.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (1996-2005)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_Rov97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/Rov97.gif','name':'Las Vegas Motor Speedway','head':'Roval (1996-2005)','length':'4.022 km // 2.499 miles','type':'Roval', 'direction':'Counter Clockwise'})">Roval</button>
+						<button type='button' id='B_RovM97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovM97.gif','name':'Las Vegas Motor Speedway','head':'Medium Roval (1996-2005)','length':'3.460 km // 2.150 miles','type':'Roval', 'direction':'Counter Clockwise'})">med. Roval</button>
+						<button type='button' id='B_RovS97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovS97.gif','name':'Las Vegas Motor Speedway','head':'Short Roval (1997-2005)','length':'3.698 km // 2.298 miles','type':'Roval', 'direction':'Counter Clockwise'})">short Roval</button>
+					</div>
+					<div>
+						<button type='button' id='B_IO97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO97.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC97.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs97.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course  – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC97.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCN97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN97.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCS97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS97.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O97.gif','name':'Las Vegas Motor Speedway','head':'Oval (1985-1999)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_DO97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/DO97.gif','name':'Las Vegas Motor Speedway','head':'Dirt Oval (1997-present)','length':'0.500 km // 0.311 miles','type':'Clay Oval', 'direction':'Counter Clockwise'})">Dirt Oval</button>
+						<button type='button' id='B_K97' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K97.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1996-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+						<button type='button' id='B_D97' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D97.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+					</div>
+				</div>
+				<div class="layouts" id="1996" style="display:none">
+					<div>
+						<button type='button' id='B_SS96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/SS96.gif','name':'Las Vegas Motor Speedway','head':'Superspeedway (1996-2005)','length':'2.414 km // 1.500 miles','type':'Oval', 'direction':'Counter Clockwise'})">Superspeedway</button>
+						<button type='button' id='B_Rov96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/Rov96.gif','name':'Las Vegas Motor Speedway','head':'Roval (1996-2005)','length':'4.022 km // 2.499 miles','type':'Roval', 'direction':'Counter Clockwise'})">Roval</button>
+						<button type='button' id='B_RovM96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RovM96.gif','name':'Las Vegas Motor Speedway','head':'Medium Roval (1996-2005)','length':'3.460 km // 2.150 miles','type':'Roval', 'direction':'Counter Clockwise'})">med. Roval</button>
+					</div>
+					<div>
+						<button type='button' id='B_IO96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IO96.gif','name':'Las Vegas Motor Speedway','head':'Legends Oval (1996-present)','length':'0.693 km // 0.431 miles','type':'Oval', 'direction':'Counter Clockwise'})">Legends Oval</button>
+						<button type='button' id='B_IRC96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRC96.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course (1996-present)','length':'2.120 km // 1.317 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course</button>
+						<button type='button' id='B_IRCs96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/IRCs96.gif','name':'Las Vegas Motor Speedway','head':'Internal Road Course – short variant (1996-present)','length':'1.487 km // 0.924 miles','type':'Permanent', 'direction':'Clockwise'})">int. Road Course – short</button>
+					</div>
+					<div>
+						<button type='button' id='B_RC96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC96.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+						<button type='button' id='B_RCN96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN96.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+						<button type='button' id='B_RCS96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS96.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					</div>
+					<div>
+						<button type='button' id='B_O96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O96.gif','name':'Las Vegas Motor Speedway','head':'Oval (1985-1999)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+						<button type='button' id='B_D96' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D96.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+						<button type='button' id='B_K96' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#96f') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K96.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1996-present)','length':'0.919 km // 0.571 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+					</div>
+				</div>
+				<div class="layouts" id="1995" style="display:none">
+					<button type='button' id='B_RC95' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC95.gif','name':'Las Vegas Motor Speedway','head':'Road Course (1995-present)','length':'2.816 km // 1.750 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+					<button type='button' id='B_RCN95' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCN95.gif','name':'Las Vegas Motor Speedway','head':'North Course (1995-present)','length':'1.207 km // 0.750 miles','type':'Permanent', 'direction':'Clockwise'})">North Road Course</button>
+					<button type='button' id='B_RCS95' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RCS95.gif','name':'Las Vegas Motor Speedway','head':'South Course (1995-present)','length':'1.883 km // 1.170 miles','type':'Permanent', 'direction':'Clockwise'})">South Road Course</button>
+					<button type='button' id='B_D95' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D95.gif','name':'Las Vegas Motor Speedway','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+					<button type='button' id='B_O95' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O95.gif','name':'Las Vegas Motor Speedway','head':'Oval (1985-1999)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Clockwise'})">Oval</button>
+					<button type='button' id='B_K95' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#94a') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K95.gif','name':'Las Vegas Motor Speedway','head':'Kart Track (1994(?)-present)','length':'0.695 km // 0.432 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+				</div>
+				<div class="layouts" id="1994" style="display:none">
+					<button type='button' id='B_RC94' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC94.gif','name':'Las Vegas Speedway Park','head':'Road Course (1983-1994)','length':'2.887 km // 1.794 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+					<button type='button' id='B_D94' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D94.gif','name':'Las Vegas Speedway Park','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+					<button type='button' id='B_O94' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O94.gif','name':'Las Vegas Speedway Park','head':'Oval (1985-1999)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+					<button type='button' id='B_K94' onclick=" lnk2html(this.id) ; enableHref('http://../Tracks/USA/LasVegasMSKart.html#94a') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/K94.gif','name':'Las Vegas Speedway Park','head':'Kart Track (1994(?)-present)','length':'0.695 km // 0.432 miles','type':'Permanent', 'direction':'Clockwise'})">Kart</button>
+				</div>
+				<div class="layouts" id="1985" style="display:none">
+					<button type='button' id='B_RC85' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC85.gif','name':'Las Vegas Speedrome','head':'Road Course (1983-1994)','length':'2.887 km // 1.794 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+					<button type='button' id='B_D85' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D85.gif','name':'Las Vegas Speedrome','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+					<button type='button' id='B_O85' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/O85.gif','name':'Las Vegas Speedrome','head':'Oval (1985-1999)','length':'0.603 km // 0.375 miles','type':'Oval', 'direction':'Counter Clockwise'})">Oval</button>
+				</div>
+				<div class="layouts" id="1983" style="display:none">
+					<button type='button' id='B_RC83' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC83.gif','name':'Las Vegas Speedrome','head':'Road Course (1983-1994)','length':'2.887 km // 1.794 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+					<button type='button' id='B_D83' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D83.gif','name':'Las Vegas Speedrome','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+				</div>
+				<div class="layouts" id="1972" style="display:none">
+					<button type='button' id='B_RC72' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/RC72.gif','name':'Las Vegas Speedrome','head':'Road Course (1972-1982)','length':'2.877 km // 1.788 miles','type':'Permanent', 'direction':'Clockwise'})">Road Course</button>
+					<button type='button' id='B_D72' onclick=" lnk2html(this.id) ; enableHref('') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/D72.gif','name':'Las Vegas Speedrome','head':'Dragstrip (1972-1999)','length':'0.402 km // 0.250 miles','type':'Dragstrip', 'direction':''})">Dragstrip</button>
+				</div>
+				<div class="layouts" id="Proposal" style="display:none">
+					&nbsp;
+				</div>
+				<div class="layouts" id="Kx_big" style="display:none"> <!-- hidden buttons for zoomed views-->
+					<div>
+						<button type='button' id='B_Kx17a' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;KX17&#34;) ; changeYear(&#34;2017&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/KSba17.gif','name':'Exotics Racing Kart track','head':'Layout A (2017-present)','length':'0.422 km // 0.262 miles','type':'Temporary', 'direction':'Counter Clockwise'})">2017 A</button>
+						<button type='button' id='B_Kx17b' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;KX17&#34;) ; changeYear(&#34;2017&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/KSbb17.gif','name':'Exotics Racing Kart track','head':'Layout B (2017-present)','length':'0.471 km // 0.293 miles','type':'Temporary', 'direction':'Counter Clockwise'})">2017 B</button>
+						<button type='button' id='B_Kx17c' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;KX17&#34;) ; changeYear(&#34;2017&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/KSbc17.gif','name':'Exotics Racing Kart track','head':'Layout C (2017-present)','length':'0.147 km // 0.091 miles','type':'Temporary', 'direction':'Counter Clockwise'})">2017 C</button>
+					</div>
+					<div>
+						<button type='button' id='B_Kx15b' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;KX15&#34;) ; changeYear(&#34;2015&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/KSb15.gif','name':'Exotics Racing Kart track','head':'2015-2016','length':'0.335 km // 0.208 miles','type':'Temporary', 'direction':'Clockwise'})">2015</button>
+					</div>
+				</div>
+				<div class="layouts" id="MX_big" style="display:none">
+					<div>
+						<button type='button' id='B_MX14B' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX14&#34;) ; changeYear(&#34;2014&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX14B.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2014-present)','length':'1.384 km // 0.860 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">2014</button>
+					</div>
+					<div>
+						<button type='button' id='B_MX10B' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX10&#34;) ; changeYear(&#34;2010&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX10B.gif','name':'Las Vegas Motor Speedway','head':'Offroad Track (2010-2013)','length':'1.788 km // 1.111 miles','type':'Off-Road', 'direction':'Counter Clockwise'})">2010</button>
+					</div>
+					<div>
+						<button type='button' id='B_MX09' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX06&#34;) ; changeYear(&#34;2006&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX09.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track (2009)','length':'1.846 km // 1.147 miles','type':'Off-Road', 'direction':'Clockwise'})">2009</button>
+					</div>
+					<div>
+						<button type='button' id='B_MX06B' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX06&#34;) ; changeYear(&#34;2006&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX06B.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track (2006)','length':'1.798 km // 1.117 miles','type':'Off-Road', 'direction':'Clockwise'})">2006</button>
+					</div>
+					<div>
+						<button type='button' id='B_MX04' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX03&#34;) ; changeYear(&#34;2003&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX04.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track (2004)','length':'1.861 km // 1.156 miles','type':'Off-Road', 'direction':'Clockwise'})">2004</button>
+					</div>
+					<div>
+						<button type='button' id='B_MX02-12a' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX03&#34;) ; changeYear(&#34;2003&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX02-12a.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track A (2002/12)','length':'1.691 km // 1.051 miles','type':'Off-Road', 'direction':'Clockwise'})">2002/12 A</button>
+						<button type='button' id='B_MX02-12b' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX03&#34;) ; changeYear(&#34;2003&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX02-12b.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track B (2002/12)','length':'0.298 km // 0.185 miles','type':'Off-Road', 'direction':'Clockwise'})">2002/12 B</button>
+					</div>
+					<div>
+						<button type='button' id='B_MX02-04a' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#27;MX03&#34;) ; changeYear(&#34;2003&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX02-04a.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track A (2002/04)','length':'1.710 km // 1.063 miles','type':'Off-Road', 'direction':'Clockwise'})">2002/04 A</button>
+						<button type='button' id='B_MX02-04b' onclick=" lnk2html(this.id) ; enableHref('javascript:ButtonPress(&#34;MX03&#34;) ; changeYear(&#34;2003&#34;)') ; changeImage({'layout_img':'./Tracks/USA/LasVegasMS/MX02-04b.gif','name':'Las Vegas Motor Speedway','head':'Motocross Track B (2002/04)','length':'0.320 km // 0.199 miles','type':'Off-Road', 'direction':'Clockwise'})">2002/04 B</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id= "table">	<!--Tabulated data. Can be changed with key:value pair entered in object passed to changeImage(). takes the form of id:string. See script.js for details-->
+			<table>			<!--More rows can be add and changed on button click,as long as id:string convention described in changeImage() documentation is followed.-->
+				<tr>
+					<td class="tleft">Type</td>
+					<td class="tright mutable" id="type">Oval</td>
+				</tr>
+				<tr>
+					<td class="tleft">Direction</td>
+					<td class="tright mutable" id="direction">Counter Clockwise</td>
+				</tr>
+				<tr>
+					<td class="tleft">Length</td>
+					<td class="tright mutable" id="length">2.414 km // 1.500 miles</td>
+				</tr>
+				<tr>		<!-- elevation above sealevel found via google maps--> 
+					<td class="tleft">Altitude above MSL</td>
+					<td class="tright">603 m</td>
+				</tr>
+				
+				<tr>
+					<td class="divider" colspan="2"></td>
+				</tr>
+				
+				<tr>
+					<td class="theader" colspan="2">Contact Information</td>
+				</tr>
+				<tr>
+					<td class="tleft">Address<br>
+						<a href="https://www.google.com/maps/dir/Current+Location/36.2722847,-115.0124648" target="_blank"><!-- change coordinates in url to tracks coords-->
+							<img src="../../../..//icons/map.gif" alt="small map">
+						</a>
+					</td>
+					<td class="tright">
+						7000 N Las Vegas Blvd<br>
+						Las Vegas<br>
+						Nevada 89115<br>
+						USA
+					</td>
+				</tr>
+				<tr>
+					<td class="tleft">Telephone</td>
+					<td class="tright">1 800 644 4444</td>
+				</tr>
+				<tr>
+					<td class="tleft">Website</td>
+					<td class="tright"><a href="https://www.lvms.com/">www.lvms.com</a></td>
+				</tr>
+				<tr>
+					<td class="tleft">Email</td>
+					<td class="tright"><a href="mailto:media@lvms.com">media@lvms.com</a></td>
+				</tr>
+			</table>
+			
+			<table id="extra"> <!--Fields for extra information, included for completeness. See Silverstone or Monza for possibilities can be extended as needed, just copy the <tr>blabla</tr> tag as needed. remove style tag to display-->
+				<tr>
+					<td class="theader" id="extra_head">Further Details</td>
+				</tr>
+				<tr><td><img src="../../../..//icons/ico_link.png">Circuit fatalities at <a href='http://www.motorsportmemorial.org/query.php?db=ct&amp;q=circuit_a&amp;n=1901,7844,7846'>Motosport Memorial</a></td></tr>
+			</table>
+		</div>
+		
+		<div id="footer">Last Updated: 1903220327 UTC</div>	<!--YYMMDDhhmm-->
+		<div id="sources">
+			<p id="source_head">Sources</p>	<!-- list of sources, can be links-->
+			<ul>
+				<li><a href='https://www.lvms.com/'>Circuit Website</a></li>
+				<li><a href='https://en.wikipedia.org/wiki/Las_Vegas_Motor_Speedway#History'>Wikipedia Dec18</a></li>
+				<li><a href='https://www.lasvegas-nv.com/news/las-vegas-motor-speedway-pre-construction.htm'>SS Proposal</a>
+				<li>Layouts - Google Maps Dec18<li>
+			</ul>
+		</div>
+	</body>
+
+<!-- Mirrored from www.the-fastlane.co.uk/racingcircuits/Tracks/USA/LasVegasMS.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Apr 2025 20:59:12 GMT -->
+</html>
