@@ -8,6 +8,8 @@ import numpy as np
 from bs4 import BeautifulSoup
 import chardet
 
+import matplotlib.pyplot as plt
+
 input_dir = "racingcircuits"
 
 def find_matching_html(gif_path):
@@ -108,11 +110,14 @@ def extract_km_length(circuit_dict):
     except (AttributeError, ValueError, KeyError):
         return None
 
-#document.querySelector("body > div:nth-child(3) > center > table")
+def scan_dir_for_tracks(input_dir, max_qtt = -1, qtt = 0):
 
-def scan_dir_for_tracks(input_dir):
     tracklist = []
+
     for i in os.listdir(input_dir):
+        if max_qtt != -1 and qtt > max_qtt:
+            return tracklist
+        
         if i.endswith(".gif"):
             corresponding_html = find_matching_html(input_dir + "/" + i)
             if corresponding_html != None:
@@ -121,12 +126,15 @@ def scan_dir_for_tracks(input_dir):
                     circuit_len = extract_km_length(html_table)
                     if circuit_len != None:
                         tracklist.append((input_dir + "/" + i, circuit_len))
-                        print(f" : {i} adicionada a lista de pistas")
+                        qtt += 1
                 except:
                     continue
         elif os.path.isdir(input_dir + "/" + i):
-            for j in scan_dir_for_tracks(input_dir + "/" + i):
+            for j in scan_dir_for_tracks(input_dir + "/" + i, max_qtt, qtt):
                 tracklist.append(j)
+                qtt += 1
+                if max_qtt != -1 and qtt > max_qtt:
+                    return tracklist
     return tracklist
 
 def debug_show(image, step_name, contours=None, points=None, delay=500):
@@ -148,22 +156,6 @@ def debug_show(image, step_name, contours=None, points=None, delay=500):
     cv2.imshow(step_name, img)
     cv2.waitKey(delay)
     cv2.destroyWindow(step_name)
-
-def has_self_intersection(contour, img_shape, thickness=3, debug=False, delay=500):
-    # Desabilitada por motivos de: Não funciona
-    return False
-    mask_thin = np.zeros(img_shape[:2], dtype=np.uint8)
-    mask_thick = np.zeros_like(mask_thin)
-    
-    cv2.drawContours(mask_thin, [contour], -1, 255, 1)
-    cv2.drawContours(mask_thick, [contour], -1, 255, thickness)
-    
-    if debug:
-        debug_show(mask_thin, "1_thin_mask", [contour], delay=delay)
-        debug_show(mask_thick, "2_thick_mask", [contour], delay=delay)
-        debug_show(cv2.subtract(mask_thick, mask_thin), "3_intersection_mask", delay=delay)
-    
-    return cv2.countNonZero(cv2.subtract(mask_thick, mask_thin)) > 0
 
 def is_valid_circuit(img, min_area=100, closure_tol=5, thickness=3, debug=False, delay=500):
     if debug:
@@ -192,36 +184,13 @@ def is_valid_circuit(img, min_area=100, closure_tol=5, thickness=3, debug=False,
                       contours, delay=delay*2)
         return False
     
-    # Simplificação do contorno
     perimeter = cv2.arcLength(contour, True)
     approx = cv2.approxPolyDP(contour, 0.02, True)
     
     if debug:
         debug_show(img, "2_contour_approximation", [approx], delay=delay)
     
-    # Critério 3: Fechamento
-    start_pt = approx[0][0]
-    end_pt = approx[-1][0]
-    closure_distance = np.linalg.norm(start_pt - end_pt)
-    
-    if debug:
-        debug_show(img, "3_closure_check", points=[start_pt, end_pt], delay=delay)
-    
-    # Removido por motivos de: N serve pra nada
-    # if closure_distance > closure_tol:
-    #     if debug: 
-    #         debug_show(img, f"REJECTED: Open contour ({closure_distance:.1f} > {closure_tol})", 
-    #                   [approx], delay=delay*2)
-    #     return False
-    
-    # Critério 4: Auto-interseção
-    intersects = has_self_intersection(approx, img.shape, thickness, debug, delay)
-    
-    if debug:
-        status = "VALID" if not intersects else "REJECTED: Self-intersection"
-        debug_show(img, f"4_final_{status}", [approx], delay=delay*3)
-    
-    return not intersects
+    return True
 
 
 def gif_to_cv2(gif_path):
@@ -242,10 +211,32 @@ def gif_to_cv2(gif_path):
         print(f"Erro ao processar {gif_path}: {str(e)}")
         return None
 
-tracklist = scan_dir_for_tracks(input_dir)
+from scipy import signal
+from scipy.ndimage import gaussian_filter1d
 
-print(len(tracklist))
-# quit()
+def smooth_curve(points, method='moving_avg', window_size=5, sigma=1.0, polyorder=3):
+    x, y = points[:, 0], points[:, 1]
+    
+    if method == 'moving_avg':
+        # Média móvel
+        kernel = np.ones(window_size) / window_size
+        y_smooth = np.convolve(y, kernel, mode='same')
+    
+    elif method == 'gaussian':
+        # Filtro Gaussiano
+        y_smooth = gaussian_filter1d(y, sigma=sigma)
+    
+    elif method == 'savgol':
+        # Filtro Savitzky-Golay (preserva melhor picos)
+        y_smooth = signal.savgol_filter(y, window_length=window_size, polyorder=polyorder)
+    
+    else:
+        raise ValueError("Método inválido. Use 'moving_avg', 'gaussian' ou 'savgol'.")
+    
+    return np.column_stack((x, y_smooth))
+
+
+tracklist = scan_dir_for_tracks(input_dir, 20)
 
 unprocessed_images_dir = 'unprocessed_dataset'
 
@@ -254,23 +245,104 @@ track_lens = []
 
 for i in tracklist:
     try:
-        # print(i[0])
         im = gif_to_cv2(i[0])
-
-        # cv2.imshow("Primeiro Frame do GIF", im)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
 
         track_images.append(im)
         track_lens.append(i[1])
-        # im.save(unprocessed_images_dir + "/" + str(abs(hash(i))) + ".png")
+
     except Exception as e:
         print(e)
 
-# print(track_images)
-# print(track_lens)
 
 processed_images_dir = "selected_images_dataset"
+
+
+from collections import defaultdict
+
+def get_racetrack_waypoints(image, simplify_epsilon=2.0, smooth_path=False):
+    try:
+        from skimage.morphology import skeletonize
+    except ImportError:
+        raise ImportError("Instale scikit-image: pip install scikit-image")
+
+    # Pré-processamento
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    _, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY_INV)
+    skeleton = skeletonize(binary // 255).astype(np.uint8) * 255
+
+    # Construção do grafo
+    graph = defaultdict(list)
+    points = np.argwhere(skeleton == 255)
+    height, width = skeleton.shape
+    
+    for y, x in points:
+        neighbors = []
+        for dy in [-1, 0, 1]:
+            for dx in [-1, 0, 1]:
+                if dx == 0 and dy == 0:
+                    continue
+                ny, nx = y + dy, x + dx
+                if 0 <= nx < width and 0 <= ny < height and skeleton[ny, nx] == 255:
+                    neighbors.append((nx, ny))
+        graph[(x, y)] = neighbors
+
+    # Encontra ponto inicial (extremidade)
+    start = next(((x, y) for (x, y), neighbors in graph.items() if len(neighbors) == 1), None)
+    if not start:
+        start = next(iter(graph.keys()))
+
+    # Extração de waypoints
+    visited = set()
+    waypoints = []
+    stack = [(start, None)]
+    
+    while stack:
+        current, prev = stack.pop()
+        if current in visited:
+            continue
+            
+        visited.add(current)
+        waypoints.append(current)
+        
+        # Prioriza vizinhos na direção do movimento
+        if prev:
+            dx = current[0] - prev[0]
+            dy = current[1] - prev[1]
+            graph[current].sort(key=lambda p: (p[0]-current[0])*dx + (p[1]-current[1])*dy, reverse=True)
+            
+        for neighbor in graph[current]:
+            if neighbor != prev:
+                stack.append((neighbor, current))
+
+    # Simplificação
+    if simplify_epsilon > 0 and len(waypoints) > 4:
+        waypoints = cv2.approxPolyDP(np.array(waypoints, dtype=np.float32), simplify_epsilon, True)
+        waypoints = [tuple(p[0]) for p in waypoints]
+
+    # Suavização
+    if smooth_path and len(waypoints) > 4:
+        from scipy.interpolate import splprep, splev
+        tck, _ = splprep(np.array(waypoints).T, s=50)
+        u_new = np.linspace(0, 1, len(waypoints))
+        x_new, y_new = splev(u_new, tck)
+        waypoints = list(zip(x_new, y_new))
+
+    return np.array(waypoints)
+
+
+
+def calculate_curve_length(waypoints):
+    if len(waypoints) < 2:
+        return 0.0
+    
+    points = np.array(waypoints)
+    
+    diffs = np.diff(points, axis=0)
+    
+    distances = np.linalg.norm(diffs, axis=1)
+    total_length = np.sum(distances)
+    
+    return total_length
 
 counter = 0
 for i, image in enumerate(track_images):
@@ -296,16 +368,50 @@ for i, image in enumerate(track_images):
     
     # Erosão no resultado para tirar a linha de chegada em algumas pistas
     kernel_size = 2
-    kernel = np.ones((kernel_size, kernel_size), np.uint8)  # Kernel 3x3
+    kernel = np.ones((kernel_size, kernel_size), np.uint8) 
+    result_bgr = cv2.GaussianBlur(result, (3, 3), 0)
     eroded_img = cv2.dilate(result_bgr, kernel, iterations=1)
+    eroded_img = cv2.GaussianBlur(eroded_img, (3, 3), 0)
 
-    if not is_valid_circuit(eroded_img, debug=True, min_area=3000, delay=500):
-        # print(f"invalid circuit {i}")
+    if not is_valid_circuit(eroded_img, debug=True, min_area=6000, delay=10000):
         continue
     
-    # print("valid circuit")
+    waypoints = get_racetrack_waypoints(eroded_img, simplify_epsilon=0.5, smooth_path=True)    
+    perimeter = calculate_curve_length(waypoints)
+
+
+    scale = perimeter/(track_lens[i] * 1000)
+    waypoints /= scale
+
+    colunas_adicionais = np.full((waypoints.shape[0], 2), 5)
+    waypoints = np.hstack([waypoints, colunas_adicionais])
+
+    waypoints = np.concatenate((waypoints, [waypoints[0] * 0.99 + waypoints[-1] * 0.01]), axis = 0)
+
+
+    from calc_splines import calc_splines
+
+    coeffs_x, coeffs_y, M, normvec_norm = calc_splines(path=np.vstack((waypoints[:, 0:2], waypoints[0, 0:2])))
+
+
+    normvec_norm = np.vstack((normvec_norm[0, :], normvec_norm))
+    normvec_norm = normvec_norm
+    normvec_norm = normvec_norm[1:]
+
+    bound1 = waypoints[:, 0:2] - normvec_norm * np.expand_dims(waypoints[:, 2], axis=1)
+    bound2 = waypoints[:, 0:2] + normvec_norm * np.expand_dims(waypoints[:, 3], axis=1)
+
+    if False:
+        plt.plot(waypoints[:, 0], waypoints[:, 1], ":")
+        plt.plot(bound1[:, 0], bound1[:, 1], 'k')
+        plt.plot(bound2[:, 0], bound2[:, 1], 'k')
+        plt.axis('equal')
+        plt.show()
+
+
+    np.savetxt(f"out/{abs(hash(i))}.csv", waypoints, fmt='%f', delimiter=',')
+    print(counter)
 
     counter += 1
-    # cv2.imwrite(processed_images_dir + "/" + i, eroded_img)
 
 print(f"Foram extraidas {counter} imagens válidas dos dados brutos")
